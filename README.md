@@ -11,6 +11,7 @@ Comes bundled with some javascript frameworks/plugins, and several sass and less
 
 ## Giants on whose shoulders I stand #
 * [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
+* [Sass for Node](https://github.com/visionmedia/sass.js/)
 * [Normalize](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass)
 * [Twitter Bootstrap](https://github.com/twitter/bootstrap)
 * [Twitter Bootstrap for Sass](https://github.com/jlong/sass-twitter-bootstrap)
