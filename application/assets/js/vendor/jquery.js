@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v1.8.0
+ * jQuery JavaScript Library v1.8.0pre
  * http://jquery.com/
  *
  * Copyright 2011, John Resig
@@ -11,27 +11,14 @@
  * Copyright 2011, The Dojo Foundation
  * Released under the MIT, BSD, and GPL Licenses.
  *
- * Date: Thu Jun 14 2012 08:41:55 GMT+0200 (CEST)
+ * Date: Mon Jun 18 2012 08:02:58 GMT+0200 (CEST)
  */
 (function( window, undefined ) {
-// Use the correct document accordingly with window argument (sandbox)
-var document = window.document,
-	navigator = window.navigator,
+var
+	// Use the correct document accordingly with window argument (sandbox)
+	document = window.document,
 	location = window.location,
-
-	// Save a reference to some core methods
-	toString = Object.prototype.toString,
-	hasOwn = Object.prototype.hasOwnProperty,
-	push = Array.prototype.push,
-	slice = Array.prototype.slice,
-	trim = String.prototype.trim,
-	indexOf = Array.prototype.indexOf,
-
-	// Define a local copy of jQuery
-	jQuery = function( selector, context ) {
-		// The jQuery object is actually just the init constructor 'enhanced'
-		return new jQuery.fn.init( selector, context, rootjQuery );
-	},
+	navigator = window.navigator,
 
 	// Map over jQuery in case of overwrite
 	_jQuery = window.jQuery,
@@ -39,38 +26,57 @@ var document = window.document,
 	// Map over the $ in case of overwrite
 	_$ = window.$,
 
+	// Save a reference to some core methods
+	core_push = Array.prototype.push,
+	core_slice = Array.prototype.slice,
+	core_indexOf = Array.prototype.indexOf,
+	core_toString = Object.prototype.toString,
+	core_hasOwn = Object.prototype.hasOwnProperty,
+	core_trim = String.prototype.trim,
+
+	// Define a local copy of jQuery
+	jQuery = function( selector, context ) {
+		// The jQuery object is actually just the init constructor 'enhanced'
+		return new jQuery.fn.init( selector, context, rootjQuery );
+	},
+
 	// A central reference to the root jQuery(document)
 	rootjQuery,
+
+	// The deferred used on DOM ready
+	readyList,
+
+	// For matching the engine and version of the browser
+	browserMatch,
+
+	// Used for detecting and trimming whitespace
+	core_rnotwhite = /\S/,
+	core_rspace = /\s+/,
+	trimLeft = /^\s+/,
+	trimRight = /\s+$/,
 
 	// A simple way to check for HTML strings or ID strings
 	// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
 	quickExpr = /^(?:[^#<]*(<[\w\W]+>)[^>]*$|#([\w\-]*)$)/,
-
-	// Check if a string has a non-whitespace character in it
-	rnotwhite = /\S/,
-
-	// Used for trimming whitespace
-	trimLeft = /^\s+/,
-	trimRight = /\s+$/,
 
 	// Match a standalone tag
 	rsingleTag = /^<(\w+)\s*\/?>(?:<\/\1>)?$/,
 
 	// JSON RegExp
 	rvalidchars = /^[\],:{}\s]*$/,
-	rvalidescape = /\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g,
-	rvalidtokens = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,
 	rvalidbraces = /(?:^|:|,)(?:\s*\[)+/g,
+	rvalidescape = /\\(?:["\\\/bfnrt]|u[\da-fA-F]{4})/g,
+	rvalidtokens = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,
 
 	// Useragent RegExp
-	rwebkit = /(webkit)[ \/]([\w.]+)/,
-	ropera = /(opera)(?:.*version)?[ \/]([\w.]+)/,
 	rmsie = /(msie) ([\w.]+)/,
+	rwebkit = /(webkit)[ \/]([\w.]+)/,
 	rmozilla = /(mozilla)(?:.*? rv:([\w.]+))?/,
+	ropera = /(opera)(?:.*version)?[ \/]([\w.]+)/,
 
 	// Matches dashed string for camelizing
-	rdashAlpha = /-([a-z]|[0-9])/ig,
 	rmsPrefix = /^-ms-/,
+	rdashAlpha = /-([\da-z])/gi,
 
 	// Used by jQuery.camelCase as callback to replace()
 	fcamelCase = function( all, letter ) {
@@ -79,12 +85,6 @@ var document = window.document,
 
 	// Keep a UserAgent string for use with jQuery.browser
 	userAgent = navigator.userAgent,
-
-	// For matching the engine and version of the browser
-	browserMatch,
-
-	// The deferred used on DOM ready
-	readyList,
 
 	// The ready event handler and self cleanup method
 	DOMContentLoaded = function() {
@@ -216,7 +216,7 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	toArray: function() {
-		return slice.call( this );
+		return core_slice.call( this );
 	},
 
 	// Get the Nth element in the matched element set OR
@@ -238,7 +238,7 @@ jQuery.fn = jQuery.prototype = {
 		var ret = this.constructor();
 
 		if ( jQuery.isArray( elems ) ) {
-			push.apply( ret, elems );
+			core_push.apply( ret, elems );
 
 		} else {
 			jQuery.merge( ret, elems );
@@ -289,8 +289,8 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	slice: function() {
-		return this.pushStack( slice.apply( this, arguments ),
-			"slice", slice.call(arguments).join(",") );
+		return this.pushStack( core_slice.apply( this, arguments ),
+			"slice", core_slice.call(arguments).join(",") );
 	},
 
 	map: function( callback ) {
@@ -305,7 +305,7 @@ jQuery.fn = jQuery.prototype = {
 
 	// For internal use only.
 	// Behaves like an Array's method, not like a jQuery method.
-	push: push,
+	push: core_push,
 	sort: [].sort,
 	splice: [].splice
 };
@@ -456,7 +456,7 @@ jQuery.extend({
 	type: function( obj ) {
 		return obj == null ?
 			String( obj ) :
-			class2type[ toString.call(obj) ] || "object";
+			class2type[ core_toString.call(obj) ] || "object";
 	},
 
 	isPlainObject: function( obj ) {
@@ -470,8 +470,8 @@ jQuery.extend({
 		try {
 			// Not own constructor property must be Object
 			if ( obj.constructor &&
-				!hasOwn.call(obj, "constructor") &&
-				!hasOwn.call(obj.constructor.prototype, "isPrototypeOf") ) {
+				!core_hasOwn.call(obj, "constructor") &&
+				!core_hasOwn.call(obj.constructor.prototype, "isPrototypeOf") ) {
 				return false;
 			}
 		} catch ( e ) {
@@ -485,7 +485,7 @@ jQuery.extend({
 		var key;
 		for ( key in obj ) {}
 
-		return key === undefined || hasOwn.call( obj, key );
+		return key === undefined || core_hasOwn.call( obj, key );
 	},
 
 	isEmptyObject: function( obj ) {
@@ -554,7 +554,7 @@ jQuery.extend({
 	// Workarounds based on findings by Jim Driscoll
 	// http://weblogs.java.net/blog/driscoll/archive/2009/09/08/eval-javascript-global-context
 	globalEval: function( data ) {
-		if ( data && rnotwhite.test( data ) ) {
+		if ( data && core_rnotwhite.test( data ) ) {
 			// We use execScript on Internet Explorer
 			// We use an anonymous function so that context is window
 			// rather than jQuery in Firefox
@@ -616,11 +616,11 @@ jQuery.extend({
 	},
 
 	// Use native String.trim function wherever possible
-	trim: trim ?
+	trim: core_trim ?
 		function( text ) {
 			return text == null ?
 				"" :
-				trim.call( text );
+				core_trim.call( text );
 		} :
 
 		// Otherwise use our own trimming functionality
@@ -640,7 +640,7 @@ jQuery.extend({
 			var type = jQuery.type( array );
 
 			if ( array.length == null || type === "string" || type === "function" || type === "regexp" || jQuery.isWindow( array ) ) {
-				push.call( ret, array );
+				core_push.call( ret, array );
 			} else {
 				jQuery.merge( ret, array );
 			}
@@ -653,8 +653,8 @@ jQuery.extend({
 		var len;
 
 		if ( array ) {
-			if ( indexOf ) {
-				return indexOf.call( array, elem, i );
+			if ( core_indexOf ) {
+				return core_indexOf.call( array, elem, i );
 			}
 
 			len = array.length;
@@ -759,9 +759,9 @@ jQuery.extend({
 		}
 
 		// Simulated bind
-		var args = slice.call( arguments, 2 ),
+		var args = core_slice.call( arguments, 2 ),
 			proxy = function() {
-				return fn.apply( context, args.concat( slice.call( arguments ) ) );
+				return fn.apply( context, args.concat( core_slice.call( arguments ) ) );
 			};
 
 		// Set the guid of unique handler to the same of original handler, so it can be removed
@@ -926,7 +926,7 @@ if ( jQuery.browser.webkit ) {
 }
 
 // IE doesn't match non-breaking spaces with \s
-if ( rnotwhite.test( "\xA0" ) ) {
+if ( core_rnotwhite.test( "\xA0" ) ) {
 	trimLeft = /^[\s\xA0]+/;
 	trimRight = /[\s\xA0]+$/;
 }
@@ -958,7 +958,7 @@ var optionsCache = {};
 // Convert String-formatted options into Object-formatted ones and store in cache
 function createOptions( options ) {
 	var object = optionsCache[ options ] = {};
-	jQuery.each( options.split( /\s+/ ), function( _, flag ) {
+	jQuery.each( options.split( core_rspace ), function( _, flag ) {
 		object[ flag ] = true;
 	});
 	return object;
@@ -1144,9 +1144,6 @@ jQuery.Callbacks = function( options ) {
 
 	return self;
 };
-var // Static reference to slice
-	sliceDeferred = [].slice;
-
 jQuery.extend({
 
 	Deferred: function( func ) {
@@ -1239,7 +1236,7 @@ jQuery.extend({
 	// Deferred helper
 	when: function( subordinate /* , ..., subordinateN */ ) {
 		var i = 0,
-			resolveValues = sliceDeferred.call( arguments ),
+			resolveValues = core_slice.call( arguments ),
 			length = resolveValues.length,
 
 			// the count of uncompleted subordinates
@@ -1252,7 +1249,7 @@ jQuery.extend({
 			updateFunc = function( i, contexts, values ) {
 				return function( value ) {
 					contexts[ i ] = this;
-					values[ i ] = arguments.length > 1 ? sliceDeferred.call( arguments ) : value;
+					values[ i ] = arguments.length > 1 ? core_slice.call( arguments ) : value;
 					if( values === progressValues ) {
 						deferred.notifyWith( contexts, values );
 					} else if ( !( --remaining ) ) {
@@ -1380,7 +1377,8 @@ jQuery.support = (function() {
 		shrinkWrapBlocks: false,
 		reliableMarginRight: true,
 		pixelMargin: true,
-		boxSizingReliable: true
+		boxSizingReliable: true,
+		pixelPosition: false
 	};
 
 	// Make sure checked status is properly cloned
@@ -1496,11 +1494,12 @@ jQuery.support = (function() {
 
 		// Check box-sizing and margin behavior
 		div.innerHTML = "";
-		div.style.cssText = "box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;padding:1px;border:1px;display:block;width:4px;margin-top:1%;";
+		div.style.cssText = "box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;padding:1px;border:1px;display:block;width:4px;margin-top:1%;position:absolute;top:1%;";
 		support.boxSizing = ( div.offsetWidth === 4 );
 		support.doesNotIncludeMarginInBodyOffset = ( body.offsetTop !== 1 );
 		if ( window.getComputedStyle ) {
 			support.pixelMargin = ( window.getComputedStyle( div, null ) || {} ).marginTop !== "1%";
+			support.pixelPosition = ( window.getComputedStyle( div, null ) || {} ).top !== "1%";
 			support.boxSizingReliable = ( window.getComputedStyle( div, null ) || { width: "4px" } ).width === "4px";
 
 			// Check if div with explicit width and no margin-right incorrectly
@@ -2051,7 +2050,6 @@ jQuery.fn.extend({
 	}
 });
 var rclass = /[\n\t\r]/g,
-	rspace = /\s+/,
 	rreturn = /\r/g,
 	rtype = /^(?:button|input)$/i,
 	rfocusable = /^(?:button|input|object|select|textarea)$/i,
@@ -2097,7 +2095,7 @@ jQuery.fn.extend({
 		}
 
 		if ( value && typeof value === "string" ) {
-			classNames = value.split( rspace );
+			classNames = value.split( core_rspace );
 
 			for ( i = 0, l = this.length; i < l; i++ ) {
 				elem = this[ i ];
@@ -2133,7 +2131,7 @@ jQuery.fn.extend({
 		}
 
 		if ( (value && typeof value === "string") || value === undefined ) {
-			classNames = ( value || "" ).split( rspace );
+			classNames = ( value || "" ).split( core_rspace );
 
 			for ( i = 0, l = this.length; i < l; i++ ) {
 				elem = this[ i ];
@@ -2173,7 +2171,7 @@ jQuery.fn.extend({
 					i = 0,
 					self = jQuery( this ),
 					state = stateVal,
-					classNames = value.split( rspace );
+					classNames = value.split( core_rspace );
 
 				while ( (className = classNames[ i++ ]) ) {
 					// check each className given, space seperated list
@@ -2411,7 +2409,7 @@ jQuery.extend({
 				value = value.toLowerCase();
 			}
 
-			attrNames = value.split( rspace );
+			attrNames = value.split( core_rspace );
 			l = attrNames.length;
 
 			for ( ; i < l; i++ ) {
@@ -3782,10 +3780,11 @@ jQuery.each( ("blur focus focusin focusout load resize scroll unload click dblcl
 var document = window.document,
 	docElem = document.documentElement,
 
-	expando = "sizcache" + (Math.random() + '').replace('.', ''),
+	expando = "sizcache" + (Math.random() + "").replace(".", ""),
 	done = 0,
 
 	toString = Object.prototype.toString,
+	strarray = "[object Array]",
 	strundefined = "undefined",
 
 	hasDuplicate = false,
@@ -3795,6 +3794,7 @@ var document = window.document,
 	rquickExpr = /^#([\w\-]+$)|^(\w+$)|^\.([\w\-]+$)/,
 	chunker = /((?:\((?:\([^()]+\)|[^()]+)+\)|\[(?:\[[^\[\]]*\]|['"][^'"]*['"]|[^\[\]'"]+)+\]|\\.|[^ >+~,(\[\\]+)+|[>+~])(\s*,\s*)?((?:.|\r|\n)*)/g,
 
+	rsibling = /^[+~]$/,
 	rbackslash = /\\/g,
 	rnonWord = /\W/,
 	rstartsWithWord = /^\w/,
@@ -3853,6 +3853,14 @@ var document = window.document,
 		div = null;
 		return pass;
 	},
+
+	// Check if attributes should be retrieved by attribute nodes
+	assertAttributes = assert(function( div ) {
+		div.innerHTML = "<select></select>";
+		var type = typeof div.lastChild.getAttribute("multiple");
+		// IE8 returns a string for some attributes even when not present
+		return type !== "boolean" && type !== "string";
+	}),
 
 	// Check to see if the browser returns elements by name when
 	// querying by getElementById (and provide a workaround)
@@ -3968,7 +3976,7 @@ var Sizzle = function( selector, context, results ) {
 };
 
 var select = function( selector, context, results, seed, contextXML ) {
-	var m, set, checkSet, extra, ret, cur, pop, i,
+	var m, set, checkSet, extra, ret, cur, pop, contextNodeType,
 		origContext = context,
 		prune = true,
 		parts = [],
@@ -4027,7 +4035,7 @@ var select = function( selector, context, results, seed, contextXML ) {
 		if ( context ) {
 			ret = seed ?
 				{ expr: parts.pop(), set: makeArray( seed ) } :
-				Sizzle.find( parts.pop(), (parts.length >= 1 && (parts[0] === "~" || parts[0] === "+") && context.parentNode) || context, contextXML );
+				Sizzle.find( parts.pop(), (parts.length >= 1 && rsibling.test( parts[0] ) && context.parentNode) || context, contextXML );
 
 			set = ret.expr ?
 				Sizzle.filter( ret.expr, ret.set ) :
@@ -4042,12 +4050,12 @@ var select = function( selector, context, results, seed, contextXML ) {
 
 			while ( parts.length ) {
 				cur = parts.pop();
-				pop = cur;
 
-				if ( !Expr.relative[ cur ] ) {
-					cur = "";
-				} else {
+				if ( Expr.relative[ cur ] ) {
 					pop = parts.pop();
+				} else {
+					pop = cur;
+					cur = "";
 				}
 
 				if ( pop == null ) {
@@ -4070,23 +4078,18 @@ var select = function( selector, context, results, seed, contextXML ) {
 		Sizzle.error( cur || selector );
 	}
 
-	if ( toString.call(checkSet) === "[object Array]" ) {
+	if ( toString.call(checkSet) === strarray ) {
 		if ( !prune ) {
 			results.push.apply( results, checkSet );
 
-		} else if ( context && context.nodeType === 1 ) {
-			for ( i = 0; checkSet[i] != null; i++ ) {
-				if ( checkSet[i] && (checkSet[i] === true || checkSet[i].nodeType === 1 && contains( context, checkSet[i] )) ) {
-					results.push( set[i] );
-				}
-			}
-
 		} else {
-			for ( i = 0; checkSet[i] != null; i++ ) {
-				if ( checkSet[i] && checkSet[i].nodeType === 1 ) {
+			contextNodeType = context && context.nodeType === 1;
+			evaluateSet( checkSet, function( elem, i ) {
+				if ( elem === true || (elem.nodeType === 1 && ( !contextNodeType || contains(context, elem) )) ) {
 					results.push( set[i] );
+					return null;
 				}
-			}
+			});
 		}
 
 	} else {
@@ -4145,6 +4148,38 @@ var uniqueSort = Sizzle.uniqueSort = function( results ) {
 	return results;
 };
 
+/**
+ * The checkset may contains arrays
+ * This applies a given function to each element
+ * @param {Array} checkSet An array that may contain elements, booleans, or arrays of elements
+ * @param {Function} fn A callback to apply to each element in checkSet.
+ *   Callback params: ( elem, i )
+ *   Expected return value: If the callback returns a value other than undefined, checkSet will be set
+ *   If null is returned, the inner loop breaks
+ */
+var evaluateSet = function( checkSet, fn ) {
+	var j, checkLen, elems, elem, ret,
+		i = 0;
+
+	for ( ; (elems = checkSet[i]) != null; i++ ) {
+		if ( toString.call( elems ) === strarray ) {
+			j = 0;
+			checkLen = elems.length;
+			for ( ; j < checkLen; j++ ) {
+				if ( (elem = elems[j]) && (ret = fn( elem, i )) !== undefined ) {
+					// If null was returned, take that as a queue to stop looping
+					if ( ret === null ) {
+						break;
+					}
+					checkSet[i][j] = ret;
+				}
+			}
+		} else if ( elems && (ret = fn( elems, i )) != null ) {
+			checkSet[i] = ret;
+		}
+	}
+};
+
 // Element contains another
 var contains = Sizzle.contains = docElem.compareDocumentPosition ?
 	function( a, b ) {
@@ -4162,6 +4197,17 @@ var contains = Sizzle.contains = docElem.compareDocumentPosition ?
 		}
 		return false;
 	};
+
+Sizzle.attr = function( elem, name ) {
+	if ( Expr.attrHandle[ name ] ) {
+		return Expr.attrHandle[ name ]( elem );
+	}
+	if ( assertAttributes || isXML( elem ) ) {
+		return elem.getAttribute( name );
+	}
+	var attr = (elem.attributes || {})[ name ];
+	return attr && attr.specified ? attr.value : null;
+};
 
 Sizzle.matches = function( expr, set ) {
 	return select( expr, document, [], set, isXML( document ) );
@@ -4198,9 +4244,7 @@ Sizzle.find = function( expr, context, contextXML ) {
 	}
 
 	if ( !set ) {
-		set = typeof context.getElementsByTagName !== strundefined ?
-			context.getElementsByTagName( "*" ) :
-			[];
+		set = Expr.find.TAG( [ 0, "*"], context );
 	}
 
 	return { set: set, expr: expr };
@@ -4208,12 +4252,29 @@ Sizzle.find = function( expr, context, contextXML ) {
 
 Sizzle.filter = function( expr, set, inplace, not ) {
 	var match, anyFound,
-		type, found, item, filter, left,
+		type, found, filter, left,
 		i, pass,
 		old = expr,
 		result = [],
 		curLoop = set,
-		isXMLFilter = set && set[0] && isXML( set[0] );
+		isXMLFilter = set && set[0] && isXML( set[0] ),
+		evaluateCurLoop = function( elem, i ) {
+			found = filter( elem, match, i, curLoop );
+			pass = not ^ found;
+
+			if ( inplace && found != null ) {
+				if ( pass ) {
+					anyFound = true;
+
+				} else {
+					return false;
+				}
+
+			} else if ( pass ) {
+				result.push( elem );
+				anyFound = true;
+			}
+		};
 
 	while ( expr && set.length ) {
 		for ( type in Expr.filter ) {
@@ -4245,25 +4306,7 @@ Sizzle.filter = function( expr, set, inplace, not ) {
 				}
 
 				if ( match ) {
-					for ( i = 0; (item = curLoop[i]) != null; i++ ) {
-						if ( item ) {
-							found = filter( item, match, i, curLoop );
-							pass = not ^ found;
-
-							if ( inplace && found != null ) {
-								if ( pass ) {
-									anyFound = true;
-
-								} else {
-									curLoop[i] = false;
-								}
-
-							} else if ( pass ) {
-								result.push( item );
-								anyFound = true;
-							}
-						}
-					}
+					evaluateSet( curLoop, evaluateCurLoop );
 				}
 
 				if ( found !== undefined ) {
@@ -4346,23 +4389,7 @@ var Expr = Sizzle.selectors = {
 
 	order: [ "ID", "NAME", "TAG" ],
 
-	attrMap: {
-		"class": "className",
-		"for": "htmlFor"
-	},
-
-	attrHandle: {
-		href: assertHrefNotNormalized ?
-			function( elem ) {
-				return elem.getAttribute( "href" );
-			} :
-			function( elem ) {
-				return elem.getAttribute( "href", 2 );
-			},
-		type: function( elem ) {
-			return elem.getAttribute( "type" );
-		}
-	},
+	attrHandle: {},
 
 	relative: {
 		"+": function( checkSet, part ) {
@@ -4373,16 +4400,12 @@ var Expr = Sizzle.selectors = {
 			if ( isTag ) {
 				part = part.toLowerCase();
 			}
-
-			for ( var i = 0, l = checkSet.length, elem; i < l; i++ ) {
-				if ( (elem = checkSet[i]) ) {
-					while ( (elem = elem.previousSibling) && elem.nodeType !== 1 ) {}
-
-					checkSet[i] = isPartStrNotTag || elem && elem.nodeName.toLowerCase() === part ?
-						elem || false :
-						elem === part;
-				}
-			}
+			evaluateSet( checkSet, function( elem ) {
+				while ( (elem = elem.previousSibling) && elem.nodeType !== 1 ) {}
+				return isPartStrNotTag || elem && elem.nodeName.toLowerCase() === part ?
+					elem || false :
+					elem === part;
+			});
 
 			if ( isPartStrNotTag ) {
 				Sizzle.filter( part, checkSet, true );
@@ -4390,33 +4413,19 @@ var Expr = Sizzle.selectors = {
 		},
 
 		">": function( checkSet, part ) {
-			var elem,
-				isPartStr = typeof part === "string",
-				i = 0,
-				l = checkSet.length;
+			var isPartStr = typeof part === "string";
 
 			if ( isPartStr && !rnonWord.test( part ) ) {
 				part = part.toLowerCase();
-
-				for ( ; i < l; i++ ) {
-					elem = checkSet[i];
-
-					if ( elem ) {
-						var parent = elem.parentNode;
-						checkSet[i] = parent.nodeName.toLowerCase() === part ? parent : false;
-					}
-				}
+				evaluateSet( checkSet, function( elem ) {
+					var parent = elem.parentNode;
+					return parent.nodeName.toLowerCase() === part ? parent : false;
+				});
 
 			} else {
-				for ( ; i < l; i++ ) {
-					elem = checkSet[i];
-
-					if ( elem ) {
-						checkSet[i] = isPartStr ?
-							elem.parentNode :
-							elem.parentNode === part;
-					}
-				}
+				evaluateSet( checkSet, function( elem ) {
+					return isPartStr ? elem.parentNode : elem.parentNode === part;
+				});
 
 				if ( isPartStr ) {
 					Sizzle.filter( part, checkSet, true );
@@ -4506,18 +4515,16 @@ var Expr = Sizzle.selectors = {
 				return match;
 			}
 
-			for ( var i = 0, elem; (elem = curLoop[i]) != null; i++ ) {
-				if ( elem ) {
-					if ( not ^ (elem.className && (" " + elem.className + " ").replace( rtnfr, " " ).indexOf( match ) >= 0) ) {
-						if ( !inplace ) {
-							result.push( elem );
-						}
-
-					} else if ( inplace ) {
-						curLoop[i] = false;
+			evaluateSet( curLoop, function( elem ) {
+				if ( not ^ (elem.className && (" " + elem.className + " ").replace( rtnfr, " " ).indexOf( match ) >= 0) ) {
+					if ( !inplace ) {
+						result.push( elem );
 					}
+
+				} else if ( inplace ) {
+					return false;
 				}
-			}
+			});
 
 			return false;
 		},
@@ -4551,17 +4558,13 @@ var Expr = Sizzle.selectors = {
 			}
 
 			// TODO: Move to normal caching system
-			match[0] = done++;
+			match[0] = ++done;
 
 			return match;
 		},
 
 		ATTR: function( match, curLoop, inplace, result, not, xml ) {
-			var name = match[1] = match[1].replace( rbackslash, "" );
-
-			if ( !xml && Expr.attrMap[ name ] ) {
-				match[1] = Expr.attrMap[ name ];
-			}
+			match[1] = match[1].replace( rbackslash, "" );
 
 			// Handle if an un-quoted value was used
 			match[4] = ( match[4] || match[5] || "" ).replace( rbackslash, "" );
@@ -4767,7 +4770,7 @@ var Expr = Sizzle.selectors = {
 
 		CHILD: function( elem, match ) {
 			var first, last,
-				doneName, parent, cache,
+				doneName, parent,
 				count, diff,
 				type = match[1],
 				node = elem;
@@ -4808,19 +4811,22 @@ var Expr = Sizzle.selectors = {
 					doneName = match[0];
 					parent = elem.parentNode;
 
-					if ( parent && (parent[ expando ] !== doneName || !elem.nodeIndex) ) {
-						count = 0;
+					if ( parent && (parent[ expando ] !== doneName || !elem.sizset) ) {
 
+						count = 0;
 						for ( node = parent.firstChild; node; node = node.nextSibling ) {
 							if ( node.nodeType === 1 ) {
-								node.nodeIndex = ++count;
+								node.sizset = ++count;
+								if ( node === elem ) {
+									break;
+								}
 							}
 						}
 
 						parent[ expando ] = doneName;
 					}
 
-					diff = elem.nodeIndex - last;
+					diff = elem.sizset - last;
 
 					if ( first === 0 ) {
 						return diff === 0;
@@ -4850,20 +4856,14 @@ var Expr = Sizzle.selectors = {
 
 		ATTR: function( elem, match ) {
 			var name = match[1],
-				result = Sizzle.attr ?
-					Sizzle.attr( elem, name ) :
-					Expr.attrHandle[ name ] ?
-					Expr.attrHandle[ name ]( elem ) :
-					elem[ name ] != null ?
-						elem[ name ] :
-						elem.getAttribute( name ),
+				result = Sizzle.attr( elem, name ),
 				value = result + "",
 				type = match[2],
 				check = match[4];
 
 			return result == null ?
 				type === "!=" :
-				!type && Sizzle.attr ?
+				!type ?
 				result != null :
 				type === "=" ?
 				value === check :
@@ -4894,6 +4894,18 @@ var Expr = Sizzle.selectors = {
 		}
 	}
 };
+
+// IE6/7 return a modified href
+if ( !assertHrefNotNormalized ) {
+	Expr.attrHandle = {
+		href: function( elem ) {
+			return elem.getAttribute( "href", 2 );
+		},
+		type: function( elem ) {
+			return elem.getAttribute("type");
+		}
+	};
+}
 
 // Add getElementsByClassName if usable
 if ( assertUsableClassName ) {
@@ -5094,62 +5106,59 @@ if ( document.querySelectorAll ) {
 }
 
 function dirCheck( dir, checkSet, part, xml ) {
-	var elem, match, isElem, nodeCheck,
-		doneName = done++,
-		i = 0,
-		len = checkSet.length;
+	var nodeCheck,
+		doneName = ++done;
 
 	if ( typeof part === "string" && !rnonWord.test( part ) ) {
 		part = part.toLowerCase();
-		nodeCheck = part;
+		nodeCheck = true;
 	}
 
-	for ( ; i < len; i++ ) {
-		elem = checkSet[i];
+	evaluateSet( checkSet, function( elem, i ) {
+		var isElem, cached,
+			levelIndex = 0,
+			match = [];
+		elem = elem[ dir ];
 
-		if ( elem ) {
-			match = false;
-			elem = elem[ dir ];
-
-			while ( elem ) {
-				if ( elem[ expando ] === doneName ) {
-					match = checkSet[ elem.sizset ];
-					break;
-				}
-
-				isElem = elem.nodeType === 1;
-				if ( isElem && !xml ) {
-					elem[ expando ] = doneName;
-					elem.sizset = i;
-				}
-
-				if ( nodeCheck ) {
-					if ( elem.nodeName.toLowerCase() === part ) {
-						match = elem;
-						break;
-					}
-				} else if ( isElem ) {
-					if ( typeof part !== "string" ) {
-						if ( elem === part ) {
-							match = true;
-							break;
-						}
-
-					} else if ( Sizzle.filter( part, [elem] ).length > 0 ) {
-						match = elem;
-						break;
-					}
-				}
-
-				elem = elem[ dir ];
+		while ( elem ) {
+			if ( elem[ expando ] === doneName && elem.sizLevelIndex === levelIndex ) {
+				cached = checkSet[ elem.sizset ];
+				match = match.length ? cached.length ? match.concat( cached ) : match : cached;
+				break;
 			}
 
-			checkSet[i] = match;
+			isElem = elem.nodeType === 1;
+			if ( isElem && !xml ) {
+				elem[ expando ] = doneName;
+				elem.sizset = i;
+				elem.sizLevelIndex = levelIndex;
+			}
+
+			if ( nodeCheck ) {
+				if ( elem.nodeName.toLowerCase() === part ) {
+					match.push( elem );
+				}
+			} else if ( isElem ) {
+				if ( typeof part !== "string" ) {
+					if ( elem === part ) {
+						// We can stop here
+						return true;
+					}
+
+				} else if ( Sizzle.filter( part, [elem] ).length > 0 ) {
+					match.push( elem );
+				}
+			}
+
+			elem = elem[ dir ];
+			levelIndex++;
 		}
-	}
+
+		return match.length ? match : false;
+	});
 }
 
-var posProcess = function( selector, context, seed, contextXML ) {
+function posProcess( selector, context, seed, contextXML ) {
 	var match,
 		tmpSet = [],
 		later = "",
@@ -5173,13 +5182,12 @@ var posProcess = function( selector, context, seed, contextXML ) {
 	}
 
 	return Sizzle.filter( later, tmpSet );
-};
+}
 
 // EXPOSE
 
 // Override sizzle attribute retrieval
 Sizzle.attr = jQuery.attr;
-Sizzle.selectors.attrMap = {};
 jQuery.find = Sizzle;
 jQuery.expr = Sizzle.selectors;
 jQuery.expr[":"] = jQuery.expr.filters;
@@ -5413,7 +5421,7 @@ jQuery.each({
 			ret = ret.reverse();
 		}
 
-		return this.pushStack( ret, name, slice.call( arguments ).join(",") );
+		return this.pushStack( ret, name, core_slice.call( arguments ).join(",") );
 	};
 });
 
@@ -5506,7 +5514,7 @@ var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|details|figca
 		"header|hgroup|mark|meter|nav|output|progress|section|summary|time|video",
 	rinlinejQuery = / jQuery\d+="(?:\d+|null)"/g,
 	rleadingWhitespace = /^\s+/,
-	rxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/ig,
+	rxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,
 	rtagName = /<([\w:]+)/,
 	rtbody = /<tbody/i,
 	rhtml = /<|&#?\w+;/,
@@ -5617,7 +5625,7 @@ jQuery.fn.extend({
 
 	append: function() {
 		return this.domManip(arguments, true, function( elem ) {
-			if ( this.nodeType === 1 ) {
+			if ( this.nodeType === 1 || this.nodeType === 11 ) {
 				this.appendChild( elem );
 			}
 		});
@@ -5625,7 +5633,7 @@ jQuery.fn.extend({
 
 	prepend: function() {
 		return this.domManip(arguments, true, function( elem ) {
-			if ( this.nodeType === 1 ) {
+			if ( this.nodeType === 1 || this.nodeType === 11 ) {
 				this.insertBefore( elem, this.firstChild );
 			}
 		});
@@ -5779,6 +5787,10 @@ jQuery.fn.extend({
 	},
 
 	domManip: function( args, table, callback ) {
+
+		// Flatten any nested arrays
+		args = [].concat.apply( [], args );
+
 		var results, first, fragment, iNoClone,
 			i = 0,
 			value = args[0],
@@ -6359,7 +6371,7 @@ function showHide( elements, show ) {
 			// for such an element
 			if ( (elem.style.display === "" && curCSS( elem, "display" ) === "none") ||
 				!jQuery.contains( elem.ownerDocument.documentElement, elem ) ) {
-				values[ index ] = jQuery._data( elem, "olddisplay", defaultDisplay(elem.nodeName) );
+				values[ index ] = jQuery._data( elem, "olddisplay", css_defaultDisplay(elem.nodeName) );
 			}
 		} else {
 			display = curCSS( elem, "display" );
@@ -6424,8 +6436,6 @@ jQuery.extend({
 					var ret = curCSS( elem, "opacity" );
 					return ret === "" ? "1" : ret;
 
-				} else {
-					return elem.style.opacity;
 				}
 			}
 		}
@@ -6577,16 +6587,16 @@ if ( document.defaultView && document.defaultView.getComputedStyle ) {
 			if ( ret === "" && !jQuery.contains( elem.ownerDocument.documentElement, elem ) ) {
 				ret = jQuery.style( elem, name );
 			}
-		}
 
-		// A tribute to the "awesome hack by Dean Edwards"
-		// WebKit uses "computed value (percentage if specified)" instead of "used value" for margins
-		// which is against the CSSOM draft spec: http://dev.w3.org/csswg/cssom/#resolved-values
-		if ( !jQuery.support.pixelMargin && computedStyle && rmargin.test( name ) && rnumnonpx.test( ret ) ) {
-			width = style.width;
-			style.width = ret;
-			ret = computedStyle.width;
-			style.width = width;
+			// A tribute to the "awesome hack by Dean Edwards"
+			// WebKit uses "computed value (percentage if specified)" instead of "used value" for margins
+			// which is against the CSSOM draft spec: http://dev.w3.org/csswg/cssom/#resolved-values
+			if ( !jQuery.support.pixelMargin && rmargin.test( name ) && rnumnonpx.test( ret ) ) {
+				width = style.width;
+				style.width = ret;
+				ret = computedStyle.width;
+				style.width = width;
+			}
 		}
 
 		return ret;
@@ -6723,7 +6733,7 @@ function getWidthOrHeight( elem, name, extra ) {
 
 
 // Try to determine the default display value of an element
-function defaultDisplay( nodeName ) {
+function css_defaultDisplay( nodeName ) {
 	if ( elemdisplay[ nodeName ] ) {
 		return elemdisplay[ nodeName ];
 	}
@@ -6833,9 +6843,9 @@ if ( !jQuery.support.opacity ) {
 	};
 }
 
+// These hooks cannot be added until DOM ready because the support test
+// for it is not run until after DOM ready
 jQuery(function() {
-	// This hook cannot be added until DOM ready because the support test
-	// for it is not run until after DOM ready
 	if ( !jQuery.support.reliableMarginRight ) {
 		jQuery.cssHooks.marginRight = {
 			get: function( elem, computed ) {
@@ -6851,6 +6861,24 @@ jQuery(function() {
 			}
 		};
 	}
+
+	// Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
+	// getComputedStyle returns percent when specified for top/left/bottom/right
+	// rather than make the css module depend on the offset module, we just check for it here
+	if ( !jQuery.support.pixelPosition && jQuery.fn.position ) {
+		jQuery.each( [ "top", "left" ], function( i, prop ) {
+			jQuery.cssHooks[ prop ] = {
+				get: function( elem, computed ) {
+					if ( computed ) {
+						var ret = curCSS( elem, prop );
+						// if curCSS returns percentage, fallback to offset
+						return rnumnonpx.test( ret ) ? jQuery( elem ).position()[ prop ] + "px" : ret;
+					}
+				}
+			};
+		});
+	}
+
 });
 
 if ( jQuery.expr && jQuery.expr.filters ) {
@@ -6906,7 +6934,6 @@ var r20 = /%20/g,
 	rquery = /\?/,
 	rscript = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
 	rselectTextarea = /^(?:select|textarea)/i,
-	rspacesAjax = /\s+/,
 	rts = /([?&])_=[^&]*/,
 	rurl = /^([\w\+\.\-]+:)(?:\/\/([^\/?#:]*)(?::(\d+))?)?/,
 
@@ -6967,7 +6994,7 @@ function addToPrefiltersOrTransports( structure ) {
 		}
 
 		if ( jQuery.isFunction( func ) ) {
-			var dataTypes = dataTypeExpression.toLowerCase().split( rspacesAjax ),
+			var dataTypes = dataTypeExpression.toLowerCase().split( core_rspace ),
 				i = 0,
 				length = dataTypes.length,
 				dataType,
@@ -7508,7 +7535,7 @@ jQuery.extend({
 		s.url = ( ( url || s.url ) + "" ).replace( rhash, "" ).replace( rprotocol, ajaxLocParts[ 1 ] + "//" );
 
 		// Extract dataTypes list
-		s.dataTypes = jQuery.trim( s.dataType || "*" ).toLowerCase().split( rspacesAjax );
+		s.dataTypes = jQuery.trim( s.dataType || "*" ).toLowerCase().split( core_rspace );
 
 		// Determine if a cross-domain request is in order
 		if ( s.crossDomain == null ) {
@@ -8303,7 +8330,7 @@ var fxNow, timerId,
 					// Iteratively approximate from a nonzero starting point
 					// Prefer the current property, because this process will be trivial if it uses the same units
 					// Fallback to end or a simple constant
-					start = parseFloat( jQuery.style( tween.elem, prop ) ) || end || 1;
+					start = parseFloat( jQuery.css( tween.elem, prop ) ) || end || 1;
 
 					do {
 						// If previous iteration zeroed out, double until we get *something*
@@ -8551,7 +8578,7 @@ function defaultPrefilter( elem, props, opts ) {
 
 			// inline-level elements accept inline-block;
 			// block-level elements need to be inline with layout
-			if ( !jQuery.support.inlineBlockNeedsLayout || defaultDisplay( elem.nodeName ) === "inline" ) {
+			if ( !jQuery.support.inlineBlockNeedsLayout || css_defaultDisplay( elem.nodeName ) === "inline" ) {
 				style.display = "inline-block";
 
 			} else {
