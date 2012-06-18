@@ -1,0 +1,9 @@
+.breadcrumbs {
+	@include horizontal-list;
+	li:before {
+		content: " » ";
+	}
+	li:first-child:before {
+		content: "";
+	}
+}

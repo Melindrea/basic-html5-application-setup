@@ -4,11 +4,12 @@
 http_path = "/"
 css_dir = "../assets/design"
 sass_dir = "sass"
-images_dir = "../assets/design/images"
-fonts_dir = "../assets/design/fonts"
+images_dir = "../assets/design/image"
+fonts_dir = "../assets/design/font"
 
 javascripts_dir = "../assets/js"
 
+#:development, :production, :whatever
 environment = :development
 
 # You can select your preferred output style here (can be overridden via the command line):

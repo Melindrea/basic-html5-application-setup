@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html lang="en" class="no-js ie6 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6 oldie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>    <html lang="en" class="no-js ie7 oldie lt-ie8 lt-ie9"> <![endif]-->
 <!--[if IE 8]>    <html lang="en" class="no-js ie8 oldie lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
@@ -14,15 +14,23 @@
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <link href='assets/design/style.css' rel='stylesheet' />
     <script src='assets/js/vendor/modernizr.js'></script>
-	<!--[if (gte IE 6)&(lte IE 8)]>
+	<!--[if lte IE 9]>
 	  <script src="assets/js/vendor/selectivizr.js"></script>
 	<![endif]--> 
   </head>
   <body>
     <div id='container'>
-      <header></header>
-      <div id='main' role='main'></div>
-      <footer></footer>
+    <!--[if lt IE 7]><p class="chromeframe">You have a <em>very</em> ancient browser! <a href="http://browsehappy.com/">Upgrade or install another</a>, or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frames</a> to get the full usage out of this page.</p><![endif]-->
+
+      <header>
+        <h1>Hello World!</h1>
+      </header>
+      <section id='main' role='main'>
+        <p>Do we need to say it again?</p>
+      </section>
+      <footer>
+        <p>Good bye, cruel world!</p>
+      </footer>
     </div>
     <script src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
     <script>
@@ -37,11 +45,5 @@
       g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
       s.parentNode.insertBefore(g,s)}(document,"script"));
     </script>
-    <!--[if lt IE 7]>
-    <script src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js'></script>
-    <script>
-      window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})});
-    </script>
-    <![endif]-->
   </body>
 </html>

@@ -1,0 +1,19 @@
+/* line 1, ../../src/sass/style.scss */
+a {
+  color: red;
+}
+
+/* line 5, ../../src/sass/style.scss */
+p {
+  font-family: Arial;
+}
+
+/* line 9, ../../src/sass/style.scss */
+h1 {
+  color: blue;
+}
+
+/* line 13, ../../src/sass/style.scss */
+body {
+  margin: 0;
+}

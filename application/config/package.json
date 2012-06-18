@@ -1,0 +1,15 @@
+{
+    "version": "0.1.0",
+    "description": "Something or another...",
+    "name": "A name",
+    "homepage": "http://blah",
+    "author": {
+        "name": "Marie Hogebrandt"
+    },
+    "licenses": [
+        {
+            "type": "",
+            "url": ""
+        }
+    ]
+}

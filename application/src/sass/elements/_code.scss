@@ -1,0 +1,67 @@
+// Code.scss
+// Code typography styles for the <code> and <pre> elements
+// --------------------------------------------------------
+
+// Inline and block code styles
+var {
+    font-weight: bold;
+}
+
+code,
+pre {
+  @include border-radius(3px);
+  background-color: $code-background;
+  color: $code-color;
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+  	border: 1px solid darken($code-background, 5*$color-step); // fallback for IE7-8
+  }
+  border: 1px solid rgba(darken($code-background, 5*$color-step),.25);
+  
+
+}
+// Inline code
+code {
+	padding: 2px 4px;
+    &.tag {
+        &:before {
+            content: "<";
+        }
+        &:after {
+            content: ">";
+        }
+    }
+    &.comment {
+        color: #00F;
+        &:before {
+            content: "/* ";
+        }
+        &:after {
+            content: " */";
+        }
+    }
+}
+
+
+// Blocks of code
+pre {
+  
+  // Make prettyprint styles more spaced out for readability
+  &.prettyprint {
+    @include trailer(1, $small-font-size);
+  }
+
+  // Account for some code outputs that place code tags in pre tags
+  code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+    font-size: inherit;
+  }
+}
+
+// Enable scrollable blocks of code
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}

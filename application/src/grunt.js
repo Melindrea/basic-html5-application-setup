@@ -3,22 +3,7 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        pkg: {
-            version: '0.1.0',
-            description: "Something or another...",
-            name: "A name",
-            license: "Some license",
-            homepage: "http://blah",
-            author: {
-                name: "Marie Hogebrandt"
-            },
-            licenses: [
-                {
-                    "type": "",
-                    "url": ""
-                }
-            ]
-        },
+        pkg: '<json:../config/package.json>',
         meta: {
             banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
                 '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
@@ -28,35 +13,54 @@ module.exports = function(grunt) {
                 '<%= _.pluck(pkg.licenses, "type").join(", ") %>*/'
         },
         dirs: {
-            src: 'js/',
-            dest: '../assets/js/'
+            base: {
+                src: '',
+                dest: '../assets/'
+            },
+            js: {
+                src: '<%= dirs.base.src %>js/',
+                dest: '<%= dirs.base.dest %>js/'
+            },
+            sass: {
+                src: '<%= dirs.base.src %>sass/',
+                dest: '<%= dirs.base.dest %>design/'
+            },
+            less: {
+                src: '<%= dirs.base.src %>less/',
+                dest: '<%= dirs.base.dest %>design/'
+            }
+        },
+        tests: {
+            base: '../test/',
+            js: '<%= tests.base %>js/**/*.js',
+            html: '<%= tests.base %>html/**/*.html'
         },
         lint: {
-            files: ['grunt.js', 'js/**/*.js', '../test/js/**/*.js']
+            files: ['grunt.js', '<%= dirs.js.src %>**/*.js', '<%= tests.js %>']
         },
         qunit: {
-            files: ['../test/**/*.html']
+            files: ['<%= tests.html %>']
         },
         concat: {
             application: {
                 src: [
                     '<banner>', 
-                    '<%= dirs.src %>app/*.js'
+                    '<%= dirs.js.src %>app/*.js'
                     ],
-                dest: '<%= dirs.src %>app.js'
+                dest: '<%= dirs.js.src %>app.js'
             },
             all: {
                 src: [
                     '<banner>', 
-                    '<%= dirs.src %>*.js'
+                    '<%= dirs.js.src %>*.js'
                     ],
-                dest: '<%= dirs.dest %>script.js'
+                dest: '<%= dirs.js.dest %>script.js'
             }
         },
         min: {
             all: {
                 src: ['<banner>', '<config:concat.all.dest>'],
-                dest: '<%= dirs.dest %>script.min.js'
+                dest: '<%= dirs.js.dest %>script.min.js'
             }
         },
         watch: {
@@ -102,22 +106,27 @@ module.exports = function(grunt) {
             }
         },
         less: {
-            compile: {
-                files: {
-                    '../assets/design/style.css': 'less/style.less'
-                },
-                options: {
-                    paths: ['less/import']
-                }
+            homepage: {
+              src: '<%= dirs.less.src %>bootstrap.less',
+              dest: '<%= dirs.less.dest %>bootstrap.css',
+              options: {
+                yuicompress: true
+              }
             }
         }
     });
-    
+
     // Default task.
-    grunt.registerTask('default', 'lint concat min');
+    grunt.registerTask('default', 'js sass');
     
+    grunt.registerTask('js', 'lint concat min');
+    grunt.registerTask('sass', 'shell:sass');
+    grunt.registerTask('test', 'qunit');
+
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib');
+    grunt.loadNpmTasks('grunt-less');
     //grunt.loadNpmTasks('grunt-smushit');
+    
 };
 
