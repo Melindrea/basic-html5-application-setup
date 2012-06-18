@@ -49,6 +49,13 @@ module.exports = function(grunt) {
                     ],
                 dest: '<%= dirs.js.src %>app.js'
             },
+            zeroClipboard: {
+                src: [
+                    '<banner>', 
+                    '<%= dirs.js.src %>jquery-plugins/*.js'
+                    ],
+                dest: '<%= dirs.js.src %>jquery-plugins.js'
+            },
             all: {
                 src: [
                     '<banner>', 
@@ -80,22 +87,31 @@ module.exports = function(grunt) {
         jshint: {
             options: {
                 curly: true,
-                plusplus: true,
+                eqeqeq: true,
+                forin: true,
                 immed: true,
                 latedef: true,
                 newcap: true,
                 noarg: true,
-                sub: true,
+                noempty: true,
+                nonew: true,
+                plusplus: false,
+                regexp: true,
                 undef: true,
-                boss: true,
+                strict: true,
+                trailing: true,
                 eqnull: true,
-                browser: true
+                browser: true,
+                jquery: true,
             },
             globals: {
-                jQuery: true,
                 Em: true,
                 Ember: true,
-                require: true
+                require: true,
+                swfobject: true,
+                i: true,
+                j: true,
+                k: true
             }
         },
         uglify: {},
