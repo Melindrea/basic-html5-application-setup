@@ -2,7 +2,6 @@
 $base-font-size: 16px !default; // Overrides default set in Vertical Rhythm partial.
 
 // The base line height determines the basic unit of vertical rhythm.
-//$base-line-height: 18px !default; // Overrides default set in Vertical Rhythm partial.
 $base-line-height: 18px !default; // Overrides default set in Vertical Rhythm partial.
 
 $h1-font-size: 1.8    * $base-font-size !default;
@@ -14,8 +13,6 @@ $h6-font-size: 1 * $base-font-size !default;
 $small-font-size: 0.8 * $base-font-size !default;
 $sup-font-size: 0.7 * $base-font-size !default;
 
-// Setting this to false will result in smaller output, but no support for ie6 hacks.
-$legacy-support-for-ie6: true; // Overrides default set in Support partial.
 
 // Setting this to false will result in smaller output, but no support for ie7 hacks.
 $legacy-support-for-ie7: true; // Overrides default set in Support partial.
@@ -26,7 +23,6 @@ $monospace-font-family:	Courier, "Courier New", "Nimbus Mono L", FreeMono, "Luci
 $fantasy-font-family:		fantasy !default;
 $cursive-font-family:		cursive !default;
 
-//The default font family. You should set $base-font-family in your _base partial.
 $base-font-family: $sans-serif-font-family;
 $alternate-font-family: $serif-font-family;
 
@@ -50,7 +46,6 @@ $link-color-hover: darken($link-color, 15);
 $link-color-active: #f00;
 $link-color-focus: $link-color-hover;
 
-
 $selection-background: black;
 $selection-color: $white;
 
@@ -61,6 +56,46 @@ $code-color: $black;
 $text-color: $white;
 $header-color: $white; 
 
+// Tables
+// -------------------------
+$table-background:                   transparent !default; // overall background-color
+$table-background-accent:             #f9f9f9 !default; // for striping
+$table-background-hover:              #f5f5f5 !default; // for hover
+$table-border:                       #ddd !default; // table and cell border
+
+
+// Buttons
+// -------------------------
+$btn-background:                     $white !default;
+$btn-background-highlight:            darken($white, 10%) !default;
+$btn-border:                         #ccc !default;
+
+$btn-primary-background:              $link-color !default;
+$btnPrimaryBackgroundHighlight:     adjust-hue($btn-primary-background, $color-step) !default;
+
+$btn-info-background:                 #5bc0de !default;
+$btn-info-background-highlight:        #2f96b4 !default;
+
+$btn-success-background:              #62c462 !default;
+$btn-success-background-highlight:     #51a351 !default;
+
+$btn-warning-background:            #ff00f2 !default;
+$btn-warning-background-highlight:     #f0f2b2 !default;
+
+$btn-danger-background:               #ee5f5b !default;
+$btn-danger-background-highlight:      #bd362f !default;
+
+$btn-inverse-background:              #C0C0C0 !default;
+$btn-inverse-background-highlight:     #B0B0B0 !default;
+
+
+// Forms
+// -------------------------
+$input-background:               $white !default;
+$input-border:                   #ccc !default;
+$input-border-radius:             3px !default;
+$input-disabled-background:       #bbb !default;
+$form-actions-background:         #f5f5f5 !default;
 
 // GRID
 // --------------------------------------------------
