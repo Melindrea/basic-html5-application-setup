@@ -2,10 +2,6 @@
 * http://blah 
 * Copyright (c) 2012 Marie Hogebrandt; Licensed */
 
-/*! A name - v0.1.0 - 2012-06-23
-* http://blah 
-* Copyright (c) 2012 Marie Hogebrandt; Licensed */
-
 /**
  * jQuery ZeroClipboard Plugin v2.0
  * Created by DudeAmI <dudeami0@gmail.com>
@@ -327,31 +323,3 @@ ZeroClipboard = {
 		orig.apply(this, arguments);
 	};
 }(jQuery));
-
-/*! A name - v0.1.0 - 2012-06-23
-* http://blah 
-* Copyright (c) 2012 Marie Hogebrandt; Licensed */
-
-/**************************
-* Models
-**************************/
-
-/**************************
-* Views
-**************************/
-
-/**************************
-* Helpers
-**************************/
-
-
-var CS;
-/**************************
-* Application
-**************************/
-CS = Em.Application.create();
-
-
-/**************************
-* Controllers
-**************************/

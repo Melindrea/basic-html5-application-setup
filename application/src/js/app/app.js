@@ -1,6 +1,6 @@
 var CS;
-/************************** 
-* Application 
+/**************************
+* Application
 **************************/
 CS = Em.Application.create();
 

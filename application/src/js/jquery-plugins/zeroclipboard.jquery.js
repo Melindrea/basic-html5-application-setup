@@ -10,17 +10,18 @@
  *	it under the terms of the GNU General Public License as published by
  *	the Free Software Foundation, either version 3 of the License, or
  *	(at your option) any later version.
- *	
+ *
  *	This program is distributed in the hope that it will be useful,
  *	but WITHOUT ANY WARRANTY; without even the implied warranty of
  *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  *	GNU General Public License for more details.
- *	
+ *
  *	You should have received a copy of the GNU General Public License
  *	along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 var ZeroClipboard;
 (function ($) {
+	"use strict";
 	var events, $this;
 	/**
 	* Stores all the event functions we'll be using.
@@ -106,8 +107,8 @@ var ZeroClipboard;
 			var $this = $(this);
 			var options = $this.data('zeroclipboard');
 			// console.debug(newoptions);
-			if (typeof options == 'undefined') {
-				if (typeof newoptions == 'undefined') {
+			if (typeof options === 'undefined') {
+				if (typeof newoptions === 'undefined') {
 					newoptions = {};
 				}
 				options = $.merge(newoptions, {
@@ -128,7 +129,7 @@ var ZeroClipboard;
 				$('#zeroclipboard')
 					.data('activeele', false);
 				// Now, check if swfobject is installed
-				if (typeof swfobject != 'undefined') {
+				if (typeof swfobject !== 'undefined') {
 					var swfoptions = {
 						wmode			: 'transparent',
 						bgcolor			: '#ffffff',
@@ -160,8 +161,6 @@ var ZeroClipboard;
 						}
 					}, ZeroClipboard.pollingInterval);
 					// console.debug("Setup of zeroclipboard is complete.");
-				} else {
-					// console.debug('Swfobject must be loaded to use jQuery ZeroClipboard');
 				}
 			}
 			// Check if the element has already been added
@@ -181,11 +180,11 @@ var ZeroClipboard;
 
 		/**
 		* Destroys the element
-		* 
+		*
 		*/
 		destroy: function () {
 			var $activeele = $('#zeroclipboard').data('activeele');
-			if ($(this).get(0) == $activeele.get(0)) {
+			if ($(this).get(0) === $activeele.get(0)) {
 				// Just hide the zeroclipboard
 				$('#zeroclipboard').css({
 					marginLeft : '-100%',
@@ -242,6 +241,7 @@ ZeroClipboard = {
 	disableEvents : false,
 
 	loadCheck: function () {
+		"use strict";
 		var $zeroclipboardflash = $('#zeroclipboard-flash');
 		var $activeele = $('#zeroclipboard').data('activeele');
 		var movie = $zeroclipboardflash.get(0);
@@ -263,6 +263,7 @@ ZeroClipboard = {
 
 	// And this is where we communicate with the flash to the JS.
 	dispatch: function (id, eventName, args) {
+		"use strict";
 		eventName = eventName.toString().toLowerCase().replace(/^on/, '');
 		var $zeroclipboard = $('#zeroclipboard');
 		var $zeroclipboardflash = $('#zeroclipboard-flash');
@@ -310,6 +311,7 @@ ZeroClipboard = {
 // Code borrowed from
 // http://stackoverflow.com/questions/2200494/jquery-trigger-event-when-an-element-is-removed-from-the-dom
 (function ($) {
+	"use strict";
 	var ev = new $.Event('remove'),
 	orig = $.fn.remove;
 	$.fn.remove = function() {
