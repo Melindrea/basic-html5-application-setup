@@ -41,7 +41,7 @@
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
-/* line 21, ../../src/sass/helpers/_reset.scss */
+/* line 21, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 article,
 aside,
 details,
@@ -59,7 +59,7 @@ summary {
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3
  */
-/* line 31, ../../src/sass/helpers/_reset.scss */
+/* line 31, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 audio,
 canvas,
 video {
@@ -72,7 +72,7 @@ video {
  * Prevents modern browsers from displaying 'audio' without controls
  * Remove excess height in iOS5 devices
  */
-/* line 44, ../../src/sass/helpers/_reset.scss */
+/* line 44, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -82,7 +82,7 @@ audio:not([controls]) {
  * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
  * Known issue: no IE6 support
  */
-/* line 54, ../../src/sass/helpers/_reset.scss */
+/* line 54, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 [hidden] {
   display: none;
 }
@@ -96,7 +96,7 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
-/* line 70, ../../src/sass/helpers/_reset.scss */
+/* line 70, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -111,7 +111,7 @@ html {
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
-/* line 86, ../../src/sass/helpers/_reset.scss */
+/* line 86, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 html,
 button,
 input,
@@ -123,7 +123,7 @@ textarea {
 /*
  * Addresses margins handled incorrectly in IE6/7
  */
-/* line 94, ../../src/sass/helpers/_reset.scss */
+/* line 94, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 body {
   margin: 0;
   font-size: 1em;
@@ -134,14 +134,14 @@ body {
  * These selection declarations have to be separate
  * Also: hot pink! (or customize the background color to match your design)
  */
-/* line 105, ../../src/sass/helpers/_reset.scss */
+/* line 105, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 ::-moz-selection {
   background: black;
   color: #f5f5f5;
   text-shadow: none;
 }
 
-/* line 106, ../../src/sass/helpers/_reset.scss */
+/* line 106, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 ::selection {
   background: black;
   color: #f5f5f5;
@@ -154,7 +154,7 @@ body {
 /*
  * Addresses outline displayed oddly in Chrome
  */
-/* line 117, ../../src/sass/helpers/_reset.scss */
+/* line 117, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -163,29 +163,29 @@ a:focus {
  * Improves readability when focused and also mouse hovered in all browsers
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-/* line 127, ../../src/sass/helpers/_reset.scss */
+/* line 127, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 131, ../../src/sass/helpers/_reset.scss */
+/* line 131, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_reset.scss */
 a {
   color: #f5f5f5;
 }
-/* line 18, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, /home/marie/.gem/ruby/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:visited {
   color: indigo;
 }
-/* line 21, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, /home/marie/.gem/ruby/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:focus {
   color: #cfcfcf;
 }
-/* line 24, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, /home/marie/.gem/ruby/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
   color: #cfcfcf;
 }
-/* line 27, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, /home/marie/.gem/ruby/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
   color: red;
 }
@@ -194,13 +194,14 @@ a:active {
  * Addresses font sizes and margins set differently in IE6/7
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
-/* line 7, ../../src/sass/elements/_typography.scss */
+/* line 7, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   font-family: Georgia, "Times New Roman", serif;
+  text-rendering: optimizelegibility;
 }
 
-/* line 11, ../../src/sass/elements/_typography.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 h1 {
   /* Sets the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 1.8em;
@@ -209,35 +210,35 @@ h1 {
   margin-top: 0.625em;
 }
 
-/* line 19, ../../src/sass/elements/_typography.scss */
+/* line 20, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.5em;
   margin-top: 0.75em;
 }
 
-/* line 24, ../../src/sass/elements/_typography.scss */
+/* line 25, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 h3 {
   font-size: 1.3em;
   line-height: 1.731em;
   margin-top: 0.865em;
 }
 
-/* line 29, ../../src/sass/elements/_typography.scss */
+/* line 30, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 h4 {
   font-size: 1.2em;
   line-height: 1.875em;
   margin-top: 0.938em;
 }
 
-/* line 34, ../../src/sass/elements/_typography.scss */
+/* line 35, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 h5 {
   font-size: 1.1em;
   line-height: 2.045em;
   margin-top: 1.023em;
 }
 
-/* line 39, ../../src/sass/elements/_typography.scss */
+/* line 40, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 h6 {
   font-size: 1em;
   line-height: 2.25em;
@@ -247,30 +248,67 @@ h6 {
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
-/* line 48, ../../src/sass/elements/_typography.scss */
+/* line 49, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 54, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
 }
 
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-/* line 57, ../../src/sass/elements/_typography.scss */
+/* line 63, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 61, ../../src/sass/elements/_typography.scss */
+/* line 68, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 blockquote {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
+  padding: 0 0 0 15px;
   margin: 1.125em 40px;
+  border-left: 5px solid;
+}
+/* line 72, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+blockquote p {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 2.25em;
+}
+/* line 77, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+blockquote small {
+  display: block;
+  line-height: 18px;
+}
+/* line 80, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+/* line 86, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid;
+  border-left: 0;
+}
+/* line 93, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+blockquote.pull-right p,
+blockquote.pull-right small {
+  text-align: right;
 }
 
 /*
  * Addresses styling not present in S5, Chrome
  */
-/* line 70, ../../src/sass/elements/_typography.scss */
+/* line 103, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 dfn {
   font-style: italic;
 }
@@ -278,7 +316,7 @@ dfn {
 /*
  * Addresses styling not present in IE6/7/8/9
  */
-/* line 78, ../../src/sass/elements/_typography.scss */
+/* line 111, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 mark {
   background: black;
   color: #f5f5f5;
@@ -288,12 +326,12 @@ mark {
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 88, ../../src/sass/elements/_typography.scss */
+/* line 121, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 p {
   margin: 0 0 1.125em 0;
 }
 
-/* line 92, ../../src/sass/elements/_typography.scss */
+/* line 125, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 p + p,
 pre {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
@@ -304,7 +342,7 @@ pre {
  * Corrects font family set oddly in IE6, S4/5, Chrome
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-/* line 106, ../../src/sass/elements/_typography.scss */
+/* line 139, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 pre,
 code,
 kbd,
@@ -319,7 +357,7 @@ var {
 /*
  * Improves readability of pre-formatted text in all browsers
  */
-/* line 118, ../../src/sass/elements/_typography.scss */
+/* line 151, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -333,20 +371,22 @@ pre {
  * 2. Addresses quote property not supported in S4
  */
 /* 1 */
-/* line 134, ../../src/sass/elements/_typography.scss */
+/* line 167, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 q {
   quotes: none;
 }
 
 /* 2 */
-/* line 141, ../../src/sass/elements/_typography.scss */
+/* line 176, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 q:before,
-q:after {
+q:after,
+blockquote:before,
+blockquote:after {
   content: '';
   content: none;
 }
 
-/* line 146, ../../src/sass/elements/_typography.scss */
+/* line 181, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 small {
   font-size: 12.8px;
 }
@@ -355,7 +395,7 @@ small {
  * Prevents sub and sup affecting line-height in all browsers
  * gist.github.com/413930
  */
-/* line 156, ../../src/sass/elements/_typography.scss */
+/* line 191, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 sub,
 sup {
   font-size: 11.2px;
@@ -364,12 +404,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 163, ../../src/sass/elements/_typography.scss */
+/* line 198, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 167, ../../src/sass/elements/_typography.scss */
+/* line 202, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 sub {
   bottom: -0.25em;
 }
@@ -380,7 +420,7 @@ sub {
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 183, ../../src/sass/elements/_typography.scss */
+/* line 218, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 dl,
 menu,
 ol,
@@ -389,7 +429,7 @@ ul {
   margin: 1.125em 0;
 }
 
-/* line 188, ../../src/sass/elements/_typography.scss */
+/* line 223, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -397,14 +437,14 @@ dd {
 /*
  * Addresses paddings set differently in IE6/7
  */
-/* line 198, ../../src/sass/elements/_typography.scss */
+/* line 233, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 menu,
 ol,
 ul {
   padding: 0 0 0 40px;
 }
 
-/* line 203, ../../src/sass/elements/_typography.scss */
+/* line 238, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 ol,
 ul {
   list-style-position: inside;
@@ -413,12 +453,62 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE7
  */
-/* line 213, ../../src/sass/elements/_typography.scss */
+/* line 248, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 nav ul,
 nav ol,
 .breadcrumbs {
   list-style: none;
   list-style-image: none;
+}
+
+/* line 260, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+/* line 263, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+ul {
+  list-style: square;
+}
+
+/* line 266, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 270, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* line 276, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+dl {
+  margin-bottom: 1.125em;
+}
+
+/* line 280, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+dd {
+  margin-left: 0.563em;
+}
+
+/* line 285, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+.dl-horizontal dt {
+  float: left;
+  width: 120px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 292, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
+.dl-horizontal dd {
+  margin-left: 130px;
 }
 
 /* =============================================================================
@@ -429,7 +519,7 @@ nav ol,
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-/* line 229, ../../src/sass/elements/_typography.scss */
+/* line 307, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 img {
   border: 0;
   /* 1 */
@@ -441,7 +531,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE9
  */
-/* line 239, ../../src/sass/elements/_typography.scss */
+/* line 317, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -452,7 +542,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
-/* line 252, ../../src/sass/elements/_typography.scss */
+/* line 330, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 figure {
   margin: 0;
 }
@@ -463,7 +553,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE6/7
  */
-/* line 265, ../../src/sass/elements/_typography.scss */
+/* line 343, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 form {
   margin: 0;
 }
@@ -471,7 +561,7 @@ form {
 /*
  * Define consistent border, margin, and padding
  */
-/* line 272, ../../src/sass/elements/_typography.scss */
+/* line 350, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 fieldset {
   border-color: #c0c0c0;
   margin: 0 2px;
@@ -491,7 +581,7 @@ fieldset {
 }
 
 /* Indicate that 'label' will shift focus to the associated form element */
-/* line 283, ../../src/sass/elements/_typography.scss */
+/* line 361, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 label {
   cursor: pointer;
 }
@@ -501,7 +591,7 @@ label {
  * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
-/* line 291, ../../src/sass/elements/_typography.scss */
+/* line 369, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 legend {
   border: 0;
   /* 1 */
@@ -517,7 +607,7 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
-/* line 309, ../../src/sass/elements/_typography.scss */
+/* line 387, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 button,
 input,
 select,
@@ -535,7 +625,7 @@ textarea {
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-/* line 323, ../../src/sass/elements/_typography.scss */
+/* line 401, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 button,
 input {
   line-height: normal;
@@ -548,7 +638,7 @@ input {
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
-/* line 337, ../../src/sass/elements/_typography.scss */
+/* line 415, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -564,7 +654,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 350, ../../src/sass/elements/_typography.scss */
+/* line 428, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -576,7 +666,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 362, ../../src/sass/elements/_typography.scss */
+/* line 440, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -595,7 +685,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 376, ../../src/sass/elements/_typography.scss */
+/* line 454, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -608,7 +698,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 386, ../../src/sass/elements/_typography.scss */
+/* line 464, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -618,7 +708,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 396, ../../src/sass/elements/_typography.scss */
+/* line 474, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -629,7 +719,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 406, ../../src/sass/elements/_typography.scss */
+/* line 484, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -643,13 +733,13 @@ textarea {
 /*
  * Remove most spacing between table cells
  */
-/* line 420, ../../src/sass/elements/_typography.scss */
+/* line 498, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 424, ../../src/sass/elements/_typography.scss */
+/* line 502, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 td {
   vertical-align: top;
 }
@@ -657,7 +747,7 @@ td {
 /* =============================================================================
    Chrome Frame Prompt
    ========================================================================== */
-/* line 430, ../../src/sass/elements/_typography.scss */
+/* line 508, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_typography.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -665,12 +755,12 @@ td {
   padding: 0.2em 0;
 }
 
-/* line 6, ../../src/sass/elements/_code.scss */
+/* line 6, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 var {
   font-weight: bold;
 }
 
-/* line 11, ../../src/sass/elements/_code.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 code,
 pre {
   -webkit-border-radius: 3px;
@@ -684,36 +774,36 @@ pre {
   border: 1px solid rgba(9, 9, 9, 0.25);
 }
 
-/* line 23, ../../src/sass/elements/_code.scss */
+/* line 23, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 code {
   padding: 2px 4px;
 }
-/* line 26, ../../src/sass/elements/_code.scss */
+/* line 26, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 code.tag:before {
   content: "<";
 }
-/* line 29, ../../src/sass/elements/_code.scss */
+/* line 29, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 code.tag:after {
   content: ">";
 }
-/* line 33, ../../src/sass/elements/_code.scss */
+/* line 33, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 code.comment {
   color: #00F;
 }
-/* line 35, ../../src/sass/elements/_code.scss */
+/* line 35, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 code.comment:before {
   content: "/* ";
 }
-/* line 38, ../../src/sass/elements/_code.scss */
+/* line 38, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 code.comment:after {
   content: " */";
 }
 
-/* line 49, ../../src/sass/elements/_code.scss */
+/* line 49, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 pre.prettyprint {
   margin-bottom: 1.406em;
 }
-/* line 54, ../../src/sass/elements/_code.scss */
+/* line 54, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 pre code {
   padding: 0;
   color: inherit;
@@ -722,7 +812,7 @@ pre code {
   font-size: inherit;
 }
 
-/* line 64, ../../src/sass/elements/_code.scss */
+/* line 64, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../elements/_code.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
@@ -748,19 +838,19 @@ pre code {
  */
 /* Layout helpers
 ----------------------------------*/
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-helper-hidden {
   display: none;
 }
 
-/* line 14, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-helper-hidden-accessible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 15, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-helper-reset {
   margin: 0;
   padding: 0;
@@ -772,23 +862,23 @@ pre code {
   list-style: none;
 }
 
-/* line 16, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 16, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-helper-clearfix:before, .ui-helper-clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 17, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-helper-clearfix:after {
   clear: both;
 }
 
-/* line 18, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-helper-clearfix {
   zoom: 1;
 }
 
-/* line 19, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 19, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-helper-zfix {
   width: 100%;
   height: 100%;
@@ -801,7 +891,7 @@ pre code {
 
 /* Interaction Cues
 ----------------------------------*/
-/* line 24, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 24, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-state-disabled {
   cursor: default !important;
 }
@@ -809,7 +899,7 @@ pre code {
 /* Icons
 ----------------------------------*/
 /* states and images */
-/* line 31, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 31, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-icon {
   display: block;
   text-indent: -99999px;
@@ -820,7 +910,7 @@ pre code {
 /* Misc visuals
 ----------------------------------*/
 /* Overlays */
-/* line 38, ../../src/sass/jquery-ui/_jquery.ui.core.scss */
+/* line 38, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.core.scss */
 .ui-widget-overlay {
   position: absolute;
   top: 0;
@@ -838,24 +928,24 @@ pre code {
  *
  * http://docs.jquery.com/UI/Resizable#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable {
   position: relative;
 }
 
-/* line 11, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-handle {
   position: absolute;
   font-size: 0.1px;
   display: block;
 }
 
-/* line 12, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
   display: none;
 }
 
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-n {
   cursor: n-resize;
   height: 7px;
@@ -864,7 +954,7 @@ pre code {
   left: 0;
 }
 
-/* line 14, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-s {
   cursor: s-resize;
   height: 7px;
@@ -873,7 +963,7 @@ pre code {
   left: 0;
 }
 
-/* line 15, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-e {
   cursor: e-resize;
   width: 7px;
@@ -882,7 +972,7 @@ pre code {
   height: 100%;
 }
 
-/* line 16, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 16, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-w {
   cursor: w-resize;
   width: 7px;
@@ -891,7 +981,7 @@ pre code {
   height: 100%;
 }
 
-/* line 17, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-se {
   cursor: se-resize;
   width: 12px;
@@ -900,7 +990,7 @@ pre code {
   bottom: 1px;
 }
 
-/* line 18, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-sw {
   cursor: sw-resize;
   width: 9px;
@@ -909,7 +999,7 @@ pre code {
   bottom: -5px;
 }
 
-/* line 19, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 19, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-nw {
   cursor: nw-resize;
   width: 9px;
@@ -918,7 +1008,7 @@ pre code {
   top: -5px;
 }
 
-/* line 20, ../../src/sass/jquery-ui/_jquery.ui.resizable.scss */
+/* line 20, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.resizable.scss */
 .ui-resizable-ne {
   cursor: ne-resize;
   width: 9px;
@@ -936,7 +1026,7 @@ pre code {
  *
  * http://docs.jquery.com/UI/Selectable#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.selectable.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.selectable.scss */
 .ui-selectable-helper {
   position: absolute;
   z-index: 100;
@@ -953,12 +1043,12 @@ pre code {
  * http://docs.jquery.com/UI/Accordion#theming
  */
 /* IE/Win - Fix animation bug - #4615 */
-/* line 11, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion {
   width: 100%;
 }
 
-/* line 12, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion .ui-accordion-header {
   cursor: pointer;
   position: relative;
@@ -966,29 +1056,29 @@ pre code {
   zoom: 1;
 }
 
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion .ui-accordion-li-fix {
   display: inline;
 }
 
-/* line 14, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion .ui-accordion-header-active {
   border-bottom: 0 !important;
 }
 
-/* line 15, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion .ui-accordion-header a {
   display: block;
   font-size: 1em;
   padding: .5em .5em .5em .7em;
 }
 
-/* line 16, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 16, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion-icons .ui-accordion-header a {
   padding-left: 2.2em;
 }
 
-/* line 17, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion .ui-accordion-header .ui-icon {
   position: absolute;
   left: .5em;
@@ -996,7 +1086,7 @@ pre code {
   margin-top: -8px;
 }
 
-/* line 18, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion .ui-accordion-content {
   padding: 1em 2.2em;
   border-top: 0;
@@ -1009,7 +1099,7 @@ pre code {
   zoom: 1;
 }
 
-/* line 19, ../../src/sass/jquery-ui/_jquery.ui.accordion.scss */
+/* line 19, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.accordion.scss */
 .ui-accordion .ui-accordion-content-active {
   display: block;
 }
@@ -1023,14 +1113,14 @@ pre code {
  *
  * http://docs.jquery.com/UI/Autocomplete#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.autocomplete.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.autocomplete.scss */
 .ui-autocomplete {
   position: absolute;
   cursor: default;
 }
 
 /* workarounds */
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.autocomplete.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.autocomplete.scss */
 * html .ui-autocomplete {
   width: 1px;
 }
@@ -1045,7 +1135,7 @@ pre code {
  *
  * http://docs.jquery.com/UI/Menu#theming
  */
-/* line 24, ../../src/sass/jquery-ui/_jquery.ui.autocomplete.scss */
+/* line 24, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.autocomplete.scss */
 .ui-menu {
   list-style: none;
   padding: 2px;
@@ -1054,12 +1144,12 @@ pre code {
   float: left;
 }
 
-/* line 31, ../../src/sass/jquery-ui/_jquery.ui.autocomplete.scss */
+/* line 31, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.autocomplete.scss */
 .ui-menu .ui-menu {
   margin-top: -3px;
 }
 
-/* line 34, ../../src/sass/jquery-ui/_jquery.ui.autocomplete.scss */
+/* line 34, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.autocomplete.scss */
 .ui-menu .ui-menu-item {
   margin: 0;
   padding: 0;
@@ -1069,7 +1159,7 @@ pre code {
   width: 100%;
 }
 
-/* line 42, ../../src/sass/jquery-ui/_jquery.ui.autocomplete.scss */
+/* line 42, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.autocomplete.scss */
 .ui-menu .ui-menu-item a {
   text-decoration: none;
   display: block;
@@ -1078,7 +1168,7 @@ pre code {
   zoom: 1;
 }
 
-/* line 50, ../../src/sass/jquery-ui/_jquery.ui.autocomplete.scss */
+/* line 50, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.autocomplete.scss */
 .ui-menu .ui-menu-item a.ui-state-hover,
 .ui-menu .ui-menu-item a.ui-state-active {
   font-weight: normal;
@@ -1094,7 +1184,7 @@ pre code {
  *
  * http://docs.jquery.com/UI/Button#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button {
   display: inline-block;
   position: relative;
@@ -1108,111 +1198,111 @@ pre code {
 }
 
 /* the overflow property removes extra width in IE */
-/* line 11, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-icon-only {
   width: 2.2em;
 }
 
 /* to make room for the icon, a width needs to be set here */
-/* line 12, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 button.ui-button-icon-only {
   width: 2.4em;
 }
 
 /* button elements seem to need a little more width */
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-icons-only {
   width: 3.4em;
 }
 
-/* line 14, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 button.ui-button-icons-only {
   width: 3.7em;
 }
 
 /*button text element */
-/* line 17, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button .ui-button-text {
   display: block;
   line-height: 1.4;
 }
 
-/* line 18, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-text-only .ui-button-text {
   padding: .4em 1em;
 }
 
-/* line 19, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 19, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
   padding: .4em;
   text-indent: -9999999px;
 }
 
-/* line 20, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 20, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text {
   padding: .4em 1em .4em 2.1em;
 }
 
-/* line 21, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 21, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text {
   padding: .4em 2.1em .4em 1em;
 }
 
-/* line 22, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 22, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-text-icons .ui-button-text {
   padding-left: 2.1em;
   padding-right: 2.1em;
 }
 
 /* no icon support for input elements, provide padding by default */
-/* line 24, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 24, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 input.ui-button {
   padding: .4em 1em;
 }
 
 /*button icon element(s) */
-/* line 27, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 27, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon {
   position: absolute;
   top: 50%;
   margin-top: -8px;
 }
 
-/* line 28, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 28, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-icon-only .ui-icon {
   left: 50%;
   margin-left: -8px;
 }
 
-/* line 29, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 29, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary {
   left: .5em;
 }
 
-/* line 30, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 30, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
   right: .5em;
 }
 
-/* line 31, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 31, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
   right: .5em;
 }
 
 /*button sets*/
-/* line 34, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 34, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-buttonset {
   margin-right: 7px;
 }
 
-/* line 35, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 35, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 .ui-buttonset .ui-button {
   margin-left: 0;
   margin-right: -0.3em;
 }
 
 /* workarounds */
-/* line 38, ../../src/sass/jquery-ui/_jquery.ui.button.scss */
+/* line 38, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.button.scss */
 button.ui-button::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -1228,7 +1318,7 @@ button.ui-button::-moz-focus-inner {
  *
  * http://docs.jquery.com/UI/Dialog#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog {
   position: absolute;
   padding: .2em;
@@ -1236,19 +1326,19 @@ button.ui-button::-moz-focus-inner {
   overflow: hidden;
 }
 
-/* line 11, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-titlebar {
   padding: .4em 1em;
   position: relative;
 }
 
-/* line 12, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-title {
   float: left;
   margin: .1em 16px .1em 0;
 }
 
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-titlebar-close {
   position: absolute;
   right: .3em;
@@ -1259,18 +1349,18 @@ button.ui-button::-moz-focus-inner {
   height: 18px;
 }
 
-/* line 14, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-titlebar-close span {
   display: block;
   margin: 1px;
 }
 
-/* line 15, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
   padding: 0;
 }
 
-/* line 16, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 16, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-content {
   position: relative;
   border: 0;
@@ -1280,7 +1370,7 @@ button.ui-button::-moz-focus-inner {
   zoom: 1;
 }
 
-/* line 17, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-buttonpane {
   text-align: left;
   border-width: 1px 0 0 0;
@@ -1289,18 +1379,18 @@ button.ui-button::-moz-focus-inner {
   padding: .3em 1em .5em .4em;
 }
 
-/* line 18, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
   float: right;
 }
 
-/* line 19, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 19, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-dialog-buttonpane button {
   margin: .5em .4em .5em 0;
   cursor: pointer;
 }
 
-/* line 20, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 20, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-dialog .ui-resizable-se {
   width: 14px;
   height: 14px;
@@ -1308,7 +1398,7 @@ button.ui-button::-moz-focus-inner {
   bottom: 3px;
 }
 
-/* line 21, ../../src/sass/jquery-ui/_jquery.ui.dialog.scss */
+/* line 21, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.dialog.scss */
 .ui-draggable .ui-dialog-titlebar {
   cursor: move;
 }
@@ -1322,13 +1412,13 @@ button.ui-button::-moz-focus-inner {
  *
  * http://docs.jquery.com/UI/Slider#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider {
   position: relative;
   text-align: left;
 }
 
-/* line 11, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
@@ -1337,7 +1427,7 @@ button.ui-button::-moz-focus-inner {
   cursor: default;
 }
 
-/* line 12, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
@@ -1347,58 +1437,58 @@ button.ui-button::-moz-focus-inner {
   background-position: 0 0;
 }
 
-/* line 14, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-horizontal {
   height: .8em;
 }
 
-/* line 15, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-horizontal .ui-slider-handle {
   top: -0.3em;
   margin-left: -0.6em;
 }
 
-/* line 16, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 16, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-horizontal .ui-slider-range {
   top: 0;
   height: 100%;
 }
 
-/* line 17, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-horizontal .ui-slider-range-min {
   left: 0;
 }
 
-/* line 18, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-horizontal .ui-slider-range-max {
   right: 0;
 }
 
-/* line 20, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 20, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-vertical {
   width: .8em;
   height: 100px;
 }
 
-/* line 21, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 21, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-vertical .ui-slider-handle {
   left: -0.3em;
   margin-left: 0;
   margin-bottom: -0.6em;
 }
 
-/* line 22, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 22, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-vertical .ui-slider-range {
   left: 0;
   width: 100%;
 }
 
-/* line 23, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 23, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-vertical .ui-slider-range-min {
   bottom: 0;
 }
 
-/* line 24, ../../src/sass/jquery-ui/_jquery.ui.slider.scss */
+/* line 24, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.slider.scss */
 .ui-slider-vertical .ui-slider-range-max {
   top: 0;
 }
@@ -1412,7 +1502,7 @@ button.ui-button::-moz-focus-inner {
  *
  * http://docs.jquery.com/UI/Tabs#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs {
   position: relative;
   padding: .2em;
@@ -1420,13 +1510,13 @@ button.ui-button::-moz-focus-inner {
 }
 
 /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
-/* line 11, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs .ui-tabs-nav {
   margin: 0;
   padding: .2em .2em 0;
 }
 
-/* line 12, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs .ui-tabs-nav li {
   list-style: none;
   float: left;
@@ -1438,31 +1528,31 @@ button.ui-button::-moz-focus-inner {
   white-space: nowrap;
 }
 
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs .ui-tabs-nav li a {
   float: left;
   padding: .5em 1em;
   text-decoration: none;
 }
 
-/* line 14, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
   margin-bottom: 0;
   padding-bottom: 1px;
 }
 
-/* line 15, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
   cursor: text;
 }
 
-/* line 16, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 16, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
   cursor: pointer;
 }
 
 /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
-/* line 17, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs .ui-tabs-panel {
   display: block;
   border-width: 0;
@@ -1470,7 +1560,7 @@ button.ui-button::-moz-focus-inner {
   background: none;
 }
 
-/* line 18, ../../src/sass/jquery-ui/_jquery.ui.tabs.scss */
+/* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.tabs.scss */
 .ui-tabs .ui-tabs-hide {
   display: none !important;
 }
@@ -1484,20 +1574,20 @@ button.ui-button::-moz-focus-inner {
  *
  * http://docs.jquery.com/UI/Datepicker#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker {
   width: 17em;
   padding: .2em .2em 0;
   display: none;
 }
 
-/* line 11, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-header {
   position: relative;
   padding: .2em 0;
 }
 
-/* line 12, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
   position: absolute;
   top: 2px;
@@ -1505,32 +1595,32 @@ button.ui-button::-moz-focus-inner {
   height: 1.8em;
 }
 
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
   top: 1px;
 }
 
-/* line 14, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-prev {
   left: 2px;
 }
 
-/* line 15, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-next {
   right: 2px;
 }
 
-/* line 16, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 16, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-prev-hover {
   left: 1px;
 }
 
-/* line 17, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-next-hover {
   right: 1px;
 }
 
-/* line 18, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
   display: block;
   position: absolute;
@@ -1540,31 +1630,31 @@ button.ui-button::-moz-focus-inner {
   margin-top: -8px;
 }
 
-/* line 19, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 19, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-title {
   margin: 0 2.3em;
   line-height: 1.8em;
   text-align: center;
 }
 
-/* line 20, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 20, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-title select {
   font-size: 1em;
   margin: 1px 0;
 }
 
-/* line 21, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 21, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker select.ui-datepicker-month-year {
   width: 100%;
 }
 
-/* line 23, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 23, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year {
   width: 49%;
 }
 
-/* line 24, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 24, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker table {
   width: 100%;
   font-size: .9em;
@@ -1572,7 +1662,7 @@ button.ui-button::-moz-focus-inner {
   margin: 0 0 .4em;
 }
 
-/* line 25, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 25, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker th {
   padding: .7em .3em;
   text-align: center;
@@ -1580,13 +1670,13 @@ button.ui-button::-moz-focus-inner {
   border: 0;
 }
 
-/* line 26, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 26, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker td {
   border: 0;
   padding: 1px;
 }
 
-/* line 27, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 27, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker td span, .ui-datepicker td a {
   display: block;
   padding: .2em;
@@ -1594,7 +1684,7 @@ button.ui-button::-moz-focus-inner {
   text-decoration: none;
 }
 
-/* line 28, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 28, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane {
   background-image: none;
   margin: .7em 0 0 0;
@@ -1604,7 +1694,7 @@ button.ui-button::-moz-focus-inner {
   border-bottom: 0;
 }
 
-/* line 29, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 29, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane button {
   float: right;
   margin: .5em .2em .4em;
@@ -1614,59 +1704,59 @@ button.ui-button::-moz-focus-inner {
   overflow: visible;
 }
 
-/* line 30, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 30, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
   float: left;
 }
 
 /* with multiple calendars */
-/* line 33, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 33, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker.ui-datepicker-multi {
   width: auto;
 }
 
-/* line 34, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 34, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group {
   float: left;
 }
 
-/* line 35, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 35, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group table {
   width: 95%;
   margin: 0 auto .4em;
 }
 
-/* line 36, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 36, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-multi-2 .ui-datepicker-group {
   width: 50%;
 }
 
-/* line 37, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 37, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-multi-3 .ui-datepicker-group {
   width: 33.3%;
 }
 
-/* line 38, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 38, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-multi-4 .ui-datepicker-group {
   width: 25%;
 }
 
-/* line 39, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 39, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header {
   border-left-width: 0;
 }
 
-/* line 40, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 40, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
   border-left-width: 0;
 }
 
-/* line 41, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 41, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-buttonpane {
   clear: left;
 }
 
-/* line 42, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 42, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-row-break {
   clear: both;
   width: 100%;
@@ -1674,69 +1764,69 @@ button.ui-button::-moz-focus-inner {
 }
 
 /* RTL support */
-/* line 45, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 45, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl {
   direction: rtl;
 }
 
-/* line 46, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 46, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-prev {
   right: 2px;
   left: auto;
 }
 
-/* line 47, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 47, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-next {
   left: 2px;
   right: auto;
 }
 
-/* line 48, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 48, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-prev:hover {
   right: 1px;
   left: auto;
 }
 
-/* line 49, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 49, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-next:hover {
   left: 1px;
   right: auto;
 }
 
-/* line 50, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 50, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane {
   clear: right;
 }
 
-/* line 51, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 51, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane button {
   float: left;
 }
 
-/* line 52, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 52, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
   float: right;
 }
 
-/* line 53, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 53, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-group {
   float: right;
 }
 
-/* line 54, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 54, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
   border-right-width: 0;
   border-left-width: 1px;
 }
 
-/* line 55, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 55, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
   border-right-width: 0;
   border-left-width: 1px;
 }
 
 /* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
-/* line 58, ../../src/sass/jquery-ui/_jquery.ui.datepicker.scss */
+/* line 58, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.datepicker.scss */
 .ui-datepicker-cover {
   display: none;
   /*sorry for IE5*/
@@ -1767,14 +1857,14 @@ button.ui-button::-moz-focus-inner {
  *
  * http://docs.jquery.com/UI/Progressbar#theming
  */
-/* line 10, ../../src/sass/jquery-ui/_jquery.ui.progressbar.scss */
+/* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.progressbar.scss */
 .ui-progressbar {
   height: 2em;
   text-align: left;
   overflow: hidden;
 }
 
-/* line 11, ../../src/sass/jquery-ui/_jquery.ui.progressbar.scss */
+/* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.progressbar.scss */
 .ui-progressbar .ui-progressbar-value {
   margin: -1px;
   height: 100%;
@@ -1782,49 +1872,49 @@ button.ui-button::-moz-focus-inner {
 
 /* Component containers
 ----------------------------------*/
-/* line 4, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 4, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget {
   font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
   font-weight: bold;
   font-size: 1.1em;
 }
-/* line 9, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 9, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget .ui-widget {
   font-size: 1em;
 }
-/* line 13, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
   font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
   font-weight: bold;
   font-size: 1.1em;
 }
 
-/* line 21, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 21, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget-content {
   border: 1px solid #dddddd;
   background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
   color: #333333;
 }
-/* line 27, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 27, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget-content a {
   color: #333333;
 }
 
-/* line 31, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 31, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget-header {
   border: 1px solid #e78f08;
   background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
   color: white;
   font-weight: bold;
 }
-/* line 37, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 37, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget-header a {
   color: white;
 }
 
 /* Interaction states
 ----------------------------------*/
-/* line 44, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 44, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: 1px solid #cccccc;
   background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
@@ -1832,13 +1922,13 @@ button.ui-button::-moz-focus-inner {
   color: #1c94c4;
 }
 
-/* line 51, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 51, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
   color: #1c94c4;
   text-decoration: none;
 }
 
-/* line 56, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 56, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
   border: 1px solid #fbcb09;
   background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
@@ -1846,13 +1936,13 @@ button.ui-button::-moz-focus-inner {
   color: #c77405;
 }
 
-/* line 63, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 63, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-hover a, .ui-state-hover a:hover {
   color: #c77405;
   text-decoration: none;
 }
 
-/* line 68, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 68, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
   border: 1px solid #fbd850;
   background: white url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
@@ -1860,20 +1950,20 @@ button.ui-button::-moz-focus-inner {
   color: #eb8f00;
 }
 
-/* line 75, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 75, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
   color: #eb8f00;
   text-decoration: none;
 }
 
-/* line 80, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 80, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget :active {
   outline: none;
 }
 
 /* Interaction Cues
 ----------------------------------*/
-/* line 86, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 86, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
   border: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;
   background: 1px solid #fed22f;
@@ -1881,13 +1971,13 @@ button.ui-button::-moz-focus-inner {
   font-weight: normal;
 }
 
-/* line 93, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 93, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
   color: #363636;
   font-weight: normal;
 }
 
-/* line 98, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 98, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
   border: 1px solid #cd0a0a;
   background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat;
@@ -1895,31 +1985,31 @@ button.ui-button::-moz-focus-inner {
   font-weight: normal;
 }
 
-/* line 105, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 105, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
   color: white;
   font-weight: normal;
 }
 
-/* line 110, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 110, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
   color: white;
   font-weight: normal;
 }
 
-/* line 115, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 115, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
   font-weight: bold;
 }
 
-/* line 119, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 119, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
   font-weight: normal;
 }
 
-/* line 124, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 124, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35);
   opacity: 0.35;
@@ -1929,910 +2019,910 @@ button.ui-button::-moz-focus-inner {
 /* Icons
 ----------------------------------*/
 /* states and images */
-/* line 133, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 133, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon {
   width: 16px;
   height: 16px;
   background-image: url("image/ui-icons_ffe45c_256x240.png");
 }
 
-/* line 139, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 139, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget-content .ui-icon {
   background-image: url("image/ui-icons_ffe45c_256x240.png");
 }
 
-/* line 143, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 143, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget-header .ui-icon {
   background-image: url("image/ui-icons_b81900_256x240.png");
 }
 
-/* line 147, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 147, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-default .ui-icon {
   background-image: url("image/ui-icons_ef8c08_256x240.png");
 }
 
-/* line 151, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 151, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
   background-image: url("image/ui-icons_ef8c08_256x240.png");
 }
 
-/* line 155, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 155, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-active .ui-icon {
   background-image: url("image/ui-icons_ef8c08_256x240.png");
 }
 
-/* line 159, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 159, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-highlight .ui-icon {
   background-image: url("image/ui-icons_228ef1_256x240.png");
 }
 
-/* line 163, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 163, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
   background-image: url("image/ui-icons_ffd27a_256x240.png");
 }
 
 /* positioning */
-/* line 168, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 168, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-1-n {
   background-position: 0 0;
 }
 
-/* line 172, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 172, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-1-ne {
   background-position: -16px 0;
 }
 
-/* line 176, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 176, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-1-e {
   background-position: -32px 0;
 }
 
-/* line 180, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 180, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-1-se {
   background-position: -48px 0;
 }
 
-/* line 184, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 184, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-1-s {
   background-position: -64px 0;
 }
 
-/* line 188, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 188, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-1-sw {
   background-position: -80px 0;
 }
 
-/* line 192, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 192, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-1-w {
   background-position: -96px 0;
 }
 
-/* line 196, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 196, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-1-nw {
   background-position: -112px 0;
 }
 
-/* line 200, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 200, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-2-n-s {
   background-position: -128px 0;
 }
 
-/* line 204, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 204, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-carat-2-e-w {
   background-position: -144px 0;
 }
 
-/* line 208, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 208, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-1-n {
   background-position: 0 -16px;
 }
 
-/* line 212, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 212, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-1-ne {
   background-position: -16px -16px;
 }
 
-/* line 216, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 216, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-1-e {
   background-position: -32px -16px;
 }
 
-/* line 220, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 220, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-1-se {
   background-position: -48px -16px;
 }
 
-/* line 224, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 224, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-1-s {
   background-position: -64px -16px;
 }
 
-/* line 228, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 228, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-1-sw {
   background-position: -80px -16px;
 }
 
-/* line 232, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 232, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-1-w {
   background-position: -96px -16px;
 }
 
-/* line 236, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 236, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-1-nw {
   background-position: -112px -16px;
 }
 
-/* line 240, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 240, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-2-n-s {
   background-position: -128px -16px;
 }
 
-/* line 244, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 244, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-triangle-2-e-w {
   background-position: -144px -16px;
 }
 
-/* line 248, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 248, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-1-n {
   background-position: 0 -32px;
 }
 
-/* line 252, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 252, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-1-ne {
   background-position: -16px -32px;
 }
 
-/* line 256, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 256, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-1-e {
   background-position: -32px -32px;
 }
 
-/* line 260, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 260, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-1-se {
   background-position: -48px -32px;
 }
 
-/* line 264, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 264, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-1-s {
   background-position: -64px -32px;
 }
 
-/* line 268, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 268, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-1-sw {
   background-position: -80px -32px;
 }
 
-/* line 272, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 272, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-1-w {
   background-position: -96px -32px;
 }
 
-/* line 276, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 276, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-1-nw {
   background-position: -112px -32px;
 }
 
-/* line 280, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 280, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-2-n-s {
   background-position: -128px -32px;
 }
 
-/* line 284, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 284, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-2-ne-sw {
   background-position: -144px -32px;
 }
 
-/* line 288, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 288, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-2-e-w {
   background-position: -160px -32px;
 }
 
-/* line 292, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 292, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-2-se-nw {
   background-position: -176px -32px;
 }
 
-/* line 296, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 296, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowstop-1-n {
   background-position: -192px -32px;
 }
 
-/* line 300, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 300, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowstop-1-e {
   background-position: -208px -32px;
 }
 
-/* line 304, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 304, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowstop-1-s {
   background-position: -224px -32px;
 }
 
-/* line 308, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 308, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowstop-1-w {
   background-position: -240px -32px;
 }
 
-/* line 312, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 312, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-1-n {
   background-position: 0 -48px;
 }
 
-/* line 316, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 316, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-1-ne {
   background-position: -16px -48px;
 }
 
-/* line 320, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 320, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-1-e {
   background-position: -32px -48px;
 }
 
-/* line 324, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 324, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-1-se {
   background-position: -48px -48px;
 }
 
-/* line 328, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 328, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-1-s {
   background-position: -64px -48px;
 }
 
-/* line 332, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 332, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-1-sw {
   background-position: -80px -48px;
 }
 
-/* line 336, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 336, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-1-w {
   background-position: -96px -48px;
 }
 
-/* line 340, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 340, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-1-nw {
   background-position: -112px -48px;
 }
 
-/* line 344, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 344, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-2-n-s {
   background-position: -128px -48px;
 }
 
-/* line 348, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 348, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-2-ne-sw {
   background-position: -144px -48px;
 }
 
-/* line 352, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 352, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-2-e-w {
   background-position: -160px -48px;
 }
 
-/* line 356, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 356, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthick-2-se-nw {
   background-position: -176px -48px;
 }
 
-/* line 360, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 360, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthickstop-1-n {
   background-position: -192px -48px;
 }
 
-/* line 364, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 364, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthickstop-1-e {
   background-position: -208px -48px;
 }
 
-/* line 370, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 370, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthickstop-1-s {
   background-position: -224px -48px;
 }
 
-/* line 374, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 374, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowthickstop-1-w {
   background-position: -240px -48px;
 }
 
-/* line 378, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 378, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowreturnthick-1-w {
   background-position: 0 -64px;
 }
 
-/* line 382, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 382, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowreturnthick-1-n {
   background-position: -16px -64px;
 }
 
-/* line 386, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 386, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowreturnthick-1-e {
   background-position: -32px -64px;
 }
 
-/* line 390, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 390, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowreturnthick-1-s {
   background-position: -48px -64px;
 }
 
-/* line 394, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 394, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowreturn-1-w {
   background-position: -64px -64px;
 }
 
-/* line 398, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 398, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowreturn-1-n {
   background-position: -80px -64px;
 }
 
-/* line 402, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 402, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowreturn-1-e {
   background-position: -96px -64px;
 }
 
-/* line 406, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 406, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowreturn-1-s {
   background-position: -112px -64px;
 }
 
-/* line 410, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 410, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowrefresh-1-w {
   background-position: -128px -64px;
 }
 
-/* line 414, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 414, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowrefresh-1-n {
   background-position: -144px -64px;
 }
 
-/* line 418, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 418, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowrefresh-1-e {
   background-position: -160px -64px;
 }
 
-/* line 422, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 422, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrowrefresh-1-s {
   background-position: -176px -64px;
 }
 
-/* line 426, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 426, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-4 {
   background-position: 0 -80px;
 }
 
-/* line 430, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 430, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-arrow-4-diag {
   background-position: -16px -80px;
 }
 
-/* line 434, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 434, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-extlink {
   background-position: -32px -80px;
 }
 
-/* line 438, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 438, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-newwin {
   background-position: -48px -80px;
 }
 
-/* line 442, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 442, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-refresh {
   background-position: -64px -80px;
 }
 
-/* line 446, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 446, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-shuffle {
   background-position: -80px -80px;
 }
 
-/* line 450, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 450, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-transfer-e-w {
   background-position: -96px -80px;
 }
 
-/* line 454, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 454, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-transferthick-e-w {
   background-position: -112px -80px;
 }
 
-/* line 458, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 458, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-folder-collapsed {
   background-position: 0 -96px;
 }
 
-/* line 462, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 462, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-folder-open {
   background-position: -16px -96px;
 }
 
-/* line 466, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 466, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-document {
   background-position: -32px -96px;
 }
 
-/* line 470, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 470, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-document-b {
   background-position: -48px -96px;
 }
 
-/* line 474, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 474, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-note {
   background-position: -64px -96px;
 }
 
-/* line 478, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 478, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-mail-closed {
   background-position: -80px -96px;
 }
 
-/* line 482, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 482, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-mail-open {
   background-position: -96px -96px;
 }
 
-/* line 486, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 486, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-suitcase {
   background-position: -112px -96px;
 }
 
-/* line 490, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 490, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-comment {
   background-position: -128px -96px;
 }
 
-/* line 494, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 494, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-person {
   background-position: -144px -96px;
 }
 
-/* line 498, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 498, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-print {
   background-position: -160px -96px;
 }
 
-/* line 502, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 502, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-trash {
   background-position: -176px -96px;
 }
 
-/* line 506, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 506, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-locked {
   background-position: -192px -96px;
 }
 
-/* line 510, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 510, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-unlocked {
   background-position: -208px -96px;
 }
 
-/* line 514, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 514, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-bookmark {
   background-position: -224px -96px;
 }
 
-/* line 518, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 518, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-tag {
   background-position: -240px -96px;
 }
 
-/* line 522, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 522, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-home {
   background-position: 0 -112px;
 }
 
-/* line 526, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 526, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-flag {
   background-position: -16px -112px;
 }
 
-/* line 530, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 530, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-calendar {
   background-position: -32px -112px;
 }
 
-/* line 534, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 534, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-cart {
   background-position: -48px -112px;
 }
 
-/* line 538, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 538, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-pencil {
   background-position: -64px -112px;
 }
 
-/* line 542, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 542, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-clock {
   background-position: -80px -112px;
 }
 
-/* line 546, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 546, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-disk {
   background-position: -96px -112px;
 }
 
-/* line 550, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 550, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-calculator {
   background-position: -112px -112px;
 }
 
-/* line 554, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 554, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-zoomin {
   background-position: -128px -112px;
 }
 
-/* line 558, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 558, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-zoomout {
   background-position: -144px -112px;
 }
 
-/* line 562, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 562, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-search {
   background-position: -160px -112px;
 }
 
-/* line 566, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 566, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-wrench {
   background-position: -176px -112px;
 }
 
-/* line 570, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 570, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-gear {
   background-position: -192px -112px;
 }
 
-/* line 574, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 574, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-heart {
   background-position: -208px -112px;
 }
 
-/* line 578, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 578, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-star {
   background-position: -224px -112px;
 }
 
-/* line 582, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 582, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-link {
   background-position: -240px -112px;
 }
 
-/* line 586, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 586, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-cancel {
   background-position: 0 -128px;
 }
 
-/* line 590, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 590, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-plus {
   background-position: -16px -128px;
 }
 
-/* line 594, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 594, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-plusthick {
   background-position: -32px -128px;
 }
 
-/* line 598, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 598, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-minus {
   background-position: -48px -128px;
 }
 
-/* line 602, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 602, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-minusthick {
   background-position: -64px -128px;
 }
 
-/* line 606, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 606, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-close {
   background-position: -80px -128px;
 }
 
-/* line 610, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 610, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-closethick {
   background-position: -96px -128px;
 }
 
-/* line 614, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 614, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-key {
   background-position: -112px -128px;
 }
 
-/* line 618, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 618, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-lightbulb {
   background-position: -128px -128px;
 }
 
-/* line 622, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 622, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-scissors {
   background-position: -144px -128px;
 }
 
-/* line 626, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 626, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-clipboard {
   background-position: -160px -128px;
 }
 
-/* line 630, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 630, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-copy {
   background-position: -176px -128px;
 }
 
-/* line 634, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 634, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-contact {
   background-position: -192px -128px;
 }
 
-/* line 638, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 638, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-image {
   background-position: -208px -128px;
 }
 
-/* line 642, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 642, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-video {
   background-position: -224px -128px;
 }
 
-/* line 646, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 646, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-script {
   background-position: -240px -128px;
 }
 
-/* line 650, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 650, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-alert {
   background-position: 0 -144px;
 }
 
-/* line 654, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 654, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-info {
   background-position: -16px -144px;
 }
 
-/* line 658, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 658, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-notice {
   background-position: -32px -144px;
 }
 
-/* line 662, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 662, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-help {
   background-position: -48px -144px;
 }
 
-/* line 666, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 666, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-check {
   background-position: -64px -144px;
 }
 
-/* line 670, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 670, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-bullet {
   background-position: -80px -144px;
 }
 
-/* line 674, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 674, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-radio-off {
   background-position: -96px -144px;
 }
 
-/* line 678, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 678, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-radio-on {
   background-position: -112px -144px;
 }
 
-/* line 682, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 682, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-pin-w {
   background-position: -128px -144px;
 }
 
-/* line 686, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 686, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-pin-s {
   background-position: -144px -144px;
 }
 
-/* line 690, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 690, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-play {
   background-position: 0 -160px;
 }
 
-/* line 694, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 694, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-pause {
   background-position: -16px -160px;
 }
 
-/* line 698, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 698, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-seek-next {
   background-position: -32px -160px;
 }
 
-/* line 702, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 702, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-seek-prev {
   background-position: -48px -160px;
 }
 
-/* line 706, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 706, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-seek-end {
   background-position: -64px -160px;
 }
 
-/* line 710, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 710, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-seek-start {
   background-position: -80px -160px;
 }
 
-/* line 714, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 714, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-stop {
   background-position: -96px -160px;
 }
 
-/* line 718, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 718, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-eject {
   background-position: -112px -160px;
 }
 
-/* line 722, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 722, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-volume-off {
   background-position: -128px -160px;
 }
 
-/* line 726, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 726, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-volume-on {
   background-position: -144px -160px;
 }
 
-/* line 730, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 730, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-power {
   background-position: 0 -176px;
 }
 
-/* line 734, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 734, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-signal-diag {
   background-position: -16px -176px;
 }
 
-/* line 738, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 738, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-signal {
   background-position: -32px -176px;
 }
 
-/* line 742, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 742, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-battery-0 {
   background-position: -48px -176px;
 }
 
-/* line 746, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 746, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-battery-1 {
   background-position: -64px -176px;
 }
 
-/* line 750, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 750, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-battery-2 {
   background-position: -80px -176px;
 }
 
-/* line 754, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 754, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-battery-3 {
   background-position: -96px -176px;
 }
 
-/* line 758, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 758, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-plus {
   background-position: 0 -192px;
 }
 
-/* line 762, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 762, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-minus {
   background-position: -16px -192px;
 }
 
-/* line 766, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 766, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-close {
   background-position: -32px -192px;
 }
 
-/* line 770, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 770, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-triangle-e {
   background-position: -48px -192px;
 }
 
-/* line 774, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 774, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-triangle-s {
   background-position: -64px -192px;
 }
 
-/* line 778, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 778, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-triangle-w {
   background-position: -80px -192px;
 }
 
-/* line 782, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 782, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-triangle-n {
   background-position: -96px -192px;
 }
 
-/* line 786, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 786, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-arrow-e {
   background-position: -112px -192px;
 }
 
-/* line 790, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 790, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-arrow-s {
   background-position: -128px -192px;
 }
 
-/* line 794, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 794, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-arrow-w {
   background-position: -144px -192px;
 }
 
-/* line 798, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 798, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-arrow-n {
   background-position: -160px -192px;
 }
 
-/* line 802, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 802, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-zoomin {
   background-position: -176px -192px;
 }
 
-/* line 806, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 806, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-zoomout {
   background-position: -192px -192px;
 }
 
-/* line 810, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 810, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circle-check {
   background-position: -208px -192px;
 }
 
-/* line 814, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 814, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circlesmall-plus {
   background-position: 0 -208px;
 }
 
-/* line 818, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 818, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circlesmall-minus {
   background-position: -16px -208px;
 }
 
-/* line 822, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 822, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-circlesmall-close {
   background-position: -32px -208px;
 }
 
-/* line 826, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 826, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-squaresmall-plus {
   background-position: -48px -208px;
 }
 
-/* line 830, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 830, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-squaresmall-minus {
   background-position: -64px -208px;
 }
 
-/* line 834, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 834, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-squaresmall-close {
   background-position: -80px -208px;
 }
 
-/* line 838, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 838, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-grip-dotted-vertical {
   background-position: 0 -224px;
 }
 
-/* line 842, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 842, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-grip-dotted-horizontal {
   background-position: -16px -224px;
 }
 
-/* line 846, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 846, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-grip-solid-vertical {
   background-position: -32px -224px;
 }
 
-/* line 850, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 850, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-grip-solid-horizontal {
   background-position: -48px -224px;
 }
 
-/* line 854, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 854, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-gripsmall-diagonal-se {
   background-position: -64px -224px;
 }
 
-/* line 858, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 858, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-icon-grip-diagonal-se {
   background-position: -80px -224px;
 }
@@ -2840,7 +2930,7 @@ button.ui-button::-moz-focus-inner {
 /* Misc visuals
 ----------------------------------*/
 /* Corner radius */
-/* line 867, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 867, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-corner-tl, .ui-corner-top, .ui-corner-left, .ui-corner-all {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -2849,7 +2939,7 @@ button.ui-button::-moz-focus-inner {
   border-top-left-radius: 4px;
 }
 
-/* line 870, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 870, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-corner-tr, .ui-corner-top, .ui-corner-right, .ui-corner-all {
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -2858,7 +2948,7 @@ button.ui-button::-moz-focus-inner {
   border-top-right-radius: 4px;
 }
 
-/* line 873, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 873, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-corner-bl, .ui-corner-bottom, .ui-corner-left, .ui-corner-all {
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -2867,7 +2957,7 @@ button.ui-button::-moz-focus-inner {
   border-bottom-left-radius: 4px;
 }
 
-/* line 876, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 876, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-corner-br, .ui-corner-bottom, .ui-corner-right, .ui-corner-all {
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
@@ -2877,14 +2967,14 @@ button.ui-button::-moz-focus-inner {
 }
 
 /* Overlays */
-/* line 904, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 904, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget-overlay {
   background: #666666 url(images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5000);
   opacity: 50;
 }
 
-/* line 909, ../../src/sass/jquery-ui/_jquery.ui.theme.scss */
+/* line 909, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/../jquery-ui/_jquery.ui.theme.scss */
 .ui-widget-shadow {
   margin: -5px 0 0 -5px;
   padding: 5px;
@@ -2899,7 +2989,7 @@ button.ui-button::-moz-focus-inner {
 }
 
 /* For image replacement */
-/* line 2, ../../src/sass/helpers/_utilities.scss */
+/* line 2, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_utilities.scss */
 .ir {
   display: block;
   border: 0;
@@ -2912,20 +3002,20 @@ button.ui-button::-moz-focus-inner {
   *line-height: 0;
 }
 
-/* line 3, ../../src/sass/helpers/_utilities.scss */
+/* line 3, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_utilities.scss */
 .ir br {
   display: none;
 }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
-/* line 6, ../../src/sass/helpers/_utilities.scss */
+/* line 6, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_utilities.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-/* line 9, ../../src/sass/helpers/_utilities.scss */
+/* line 9, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_utilities.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2938,7 +3028,7 @@ button.ui-button::-moz-focus-inner {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-/* line 12, ../../src/sass/helpers/_utilities.scss */
+/* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_utilities.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -2949,7 +3039,7 @@ button.ui-button::-moz-focus-inner {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 15, ../../src/sass/helpers/_utilities.scss */
+/* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/helpers/_utilities.scss */
 .invisible {
   visibility: hidden;
 }
@@ -2959,7 +3049,7 @@ button.ui-button::-moz-focus-inner {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 7, ../../src/sass/elements/_print.scss */
+  /* line 7, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -2970,45 +3060,45 @@ button.ui-button::-moz-focus-inner {
   }
 
   /* Black prints faster: h5bp.com/s */
-  /* line 8, ../../src/sass/elements/_print.scss */
+  /* line 8, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 9, ../../src/sass/elements/_print.scss */
+  /* line 9, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 10, ../../src/sass/elements/_print.scss */
+  /* line 10, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 11, ../../src/sass/elements/_print.scss */
+  /* line 11, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
-  /* line 12, ../../src/sass/elements/_print.scss */
+  /* line 12, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 13, ../../src/sass/elements/_print.scss */
+  /* line 13, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   thead {
     display: table-header-group;
   }
 
   /* h5bp.com/t */
-  /* line 14, ../../src/sass/elements/_print.scss */
+  /* line 14, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 15, ../../src/sass/elements/_print.scss */
+  /* line 15, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   img {
     max-width: 100% !important;
   }
@@ -3017,13 +3107,13 @@ button.ui-button::-moz-focus-inner {
     margin: 0.5cm;
 }
 
-  /* line 17, ../../src/sass/elements/_print.scss */
+  /* line 17, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 18, ../../src/sass/elements/_print.scss */
+  /* line 18, /home/marie/libraries/basic-html5-application-setup/application/src/sass/elements/_print.scss */
   h2, h3 {
     page-break-after: avoid;
   }
