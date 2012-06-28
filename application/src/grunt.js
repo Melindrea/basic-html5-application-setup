@@ -140,9 +140,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('test', 'qunit');
 
 	grunt.loadNpmTasks('grunt-shell');
-	grunt.loadNpmTasks('grunt-contrib');
 	grunt.loadNpmTasks('grunt-less');
-	//grunt.loadNpmTasks('grunt-smushit');
+	grunt.loadNpmTasks('grunt-smushit');
 	
 };
 
