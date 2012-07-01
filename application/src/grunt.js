@@ -28,6 +28,16 @@ module.exports = function(grunt) {
 			less: {
 				src: '<%= dirs.base.src %>less/',
 				dest: '<%= dirs.base.dest %>design/'
+			},
+			images: {
+				core: {
+					src: '<%= dirs.base.src %>images',
+					dest: '<%= dirs.base.dest %>img'
+				},
+				design: {
+					src: '<%= dirs.base.src %>images/design',
+					dest: '<%= dirs.base.dest %>design/image'
+				}
 			}
 		},
 		tests: {
@@ -77,12 +87,15 @@ module.exports = function(grunt) {
 			},
 			'sass': {
 				files: 'sass/*.scss',
-				tasks: 'shell:sass'
+				tasks: 'compass'
 			},
 			'less': {
 				files: 'less/*.less',
 				tasks: 'less'
 			}
+		},
+		compass: {
+			"main": {}
 		},
 		jshint: {
 			options: {
@@ -116,9 +129,12 @@ module.exports = function(grunt) {
 		},
 		uglify: {},
 		shell: {
-			sass: {
-				command: 'compass compile',
-				stdout: true
+			chown: {
+				command: 'sudo chown -R :all-users *; sudo chmod -R g+w *',
+				stdout: true,
+				execOptions: {
+					cwd: '../../'
+				}
 			}
 		},
 		less: {
@@ -129,6 +145,12 @@ module.exports = function(grunt) {
 					yuicompress: true
 				}
 			}
+		},
+		smushit: {
+			destination: {
+				src: '<%= dirs.images.design.src %>',
+				dest: '<%= dirs.images.design.dest %>'
+			}
 		}
 	});
 
@@ -136,12 +158,15 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', 'js sass');
 	
 	grunt.registerTask('js', 'lint concat min');
-	grunt.registerTask('sass', 'shell:sass');
+	grunt.registerTask('sass', 'compass');
 	grunt.registerTask('test', 'qunit');
 
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-less');
 	grunt.loadNpmTasks('grunt-smushit');
+	grunt.loadNpmTasks('grunt-contrib');
+	//grunt.loadNpmTasks('grunt-requirejs');
+	grunt.loadNpmTasks('grunt-compass');
 	
 };
 
